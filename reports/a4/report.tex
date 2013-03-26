@@ -1,0 +1,50 @@
+\documentclass[12pt, letter]{article}
+
+\usepackage{fullpage}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0cm}
+
+\title{Assignment 4: Individual Paper Prototype and Test \\ Job Search Tracking}
+\author{William Richard}
+
+\begin{document}
+\maketitle
+
+\section{User Testing Video}
+
+A video of the user testing can be found here.
+
+\url{https://www.youtube.com/watch?v=dH5-B4HNRUM}
+
+\section{User Reactions}
+Here are my observations and reactions of the user test.
+
+\begin{itemize}
+\item The UI is fairly simple, and does not vary much from common forms found online.  Thus, few problems were encountered.
+\item Text may be too small in the graph visualization of the user's connections.  This can be fixed in several ways
+\begin {enumerate}
+\item Bigger text, but the graph is already appears cramped
+\item Text only appears as user zooms in (like street names on google maps).  Likely one category of nodes would have labels at all times (the currently selected category for example).  Also, a selected node could have all of its text and it's neighbors text be visible.
+\end{enumerate}
+Option 2 seems like the clear solution, but a more interactive testing is necessary to see if this graph idea can work, and how to best implement it.
+
+\end{itemize}
+
+\section{Improvements while creating the prototype}
+Not much has changed from the storyboard to this prototype.  The biggest change is the addition of a graphical representation of the user's stored information.  It shows the various objects as nodes,  and relationships between them as edges between nodes.   I think that this graph can provide several advantages.
+\begin{description}
+\item [Ease of navigation]  It is  clear and easy to move from a job listing to notes that are related to it, or various other navigation tasks like that.
+\item [Ease of data entry]  This is especially true for object relations.  Instead of having to choose from a dropdown list of options, the user can just select the node they want to create a connection with, and in some way input the connection's label.  I'm not completely sure how to best do this yet, as I'm not sure how to denote when a click on a node means add a connection instead of when a click means the user wants to navigate to that node without having it behave one way in one mode and a completely different way in another mode.  I realize that modeing is sometimes the right answer, but I'm not convinced yet that this is one of those times.
+\end{description}
+
+\section{Functionality that was not included}
+The biggest feature that was not included was the graph of objects.  Like I've noted above, I'm not quite sure how to best use this idea at this point, and even if I did know exactly what I wanted, I'm not sure how to best paper prototype it.  I'm sure it can be done, I'm just not sure that I have the artistic and creative abilities to pull it off in a convincing, legible way.
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[12pt, letter]{article}
+
+\usepackage{fullpage}
+\setlength{\parindent}{0cm}
+
+\title{Assignment 2: Individual Preliminary Design \\ Job Search Tracking}
+\author{William Richard}
+
+\begin{document}
+\maketitle
+
+\section{Project Description}
+A propose an application that helps people track their job search and networking efforts.  When looking for a job, most people pursue multiple job opportunities at multiple companies and talk to many different people.  Some of these efforts result in positions, others do not, but regardless it is important to keep track of who you've talked to about which positions, and to whom you've sent materials like r\'{e}sum\'{e}s and cover letters.
+
+\section{User Analysis}
+The target users are job seekers.  At this point, I'm not sure if this is going to be a web based or desktop based application.  In either case, the target user is familiar enough with using computers to navigate to websites and install applications.  Given an understanding of the application's purpose, its usage should be immediately evident.  
+
+\section{Task Analysis}
+I foresee two possible, overlapping tasks for this application.
+\begin{enumerate}
+\item Job Searching
+
+This would involve keeping track of which jobs the user is pursuing, who they have talked to regarding those jobs, and what those conversations entailed.
+\item Networking
+
+This would involve generally tracking who the user has talked with and when, what companies those people were at, and those people's contact information.
+\end{enumerate}
+In both cases, the system should have some way to keep track of who the user has talked to, and what happened in those conversations.  It should be easy to add contact information for other people and denote which companies they belong to.  
+
+In the first case, the system should allow users to associate those interactions with specific jobs, so they can track their progress pursuing various positions.
+
+The user is responsible for making those networking connections, having conversations with people, and populating the various fields of the system.  The system should make this task easy, while also making it easy for the user to review the information and connections that they've entered.
+
+\section{Functionality and Usage Scenarios}
+\subsection{Functionality}
+\begin{description}
+\item[Import Contacts] Users should be able to import contact information from other sources, such as vCards, to automatically populate the system with people they already know.
+\item[Track Job Search] The user should be able to add new jobs, associate them with companies, and record conversations and progress towards getting the job.  It should be easy to view what actions have been taken for each job, distinct progress for multiple jobs from the same company, and who the user has talked to about each job.
+
+\item[Flexible Fields] The user should be able to flexibly specify what information they want to store about companies, other people, and jobs.  For example, a user may or may not want to store the linkedin profile url or mailing address for a contact - the system should be able to support any such fields.
+\end{description}
+
+\subsection{Usage Scenarios}
+\begin{description}
+\item[Interesting job] Sharon finds a job that shes is interested in applying for at a later date.  She creates a company entry for that job, and then creates a job entry for the listing.  She makes a note, referencing both the company and the job, saying that she should send in an application later.  She creates 2 custom fields for the job, the application URL and the job description URL.
+\item[Meeting Someone New] Carl meets Travis at a conference, and gets his business card.  When he's at the computer, he creates an entry for the company that Travis works at, and then creates a person entry with Travis' information.
+\item[Multiple Jobs, Same Company] Chris is pursuing two jobs at Widgets Inc.  He creates a company entry for Widgets Inc, and an entry for each job.  He's able to create different notes for the different jobs by associating a given note with one job and not the other, and he's able to make notes about the company culture by associating those notes with the company entry but neither job.
+\end{description}
+
+
+\section{Conceptual Model}
+\begin{description}
+\item[Objects] Company, Job, Contact, Note
+\item[Object attributes]
+As mentioned above, the user should be able to add arbitrary attributes.
+\begin{description}
+\item[Company] Name, Address, Phone number, Logo
+\item[Job] Title
+\item[Contact] Name, Phone, Picture
+\item[Note] Text
+\end{description}
+
+\item[Object Relations] \hfill
+\begin{description}
+\item[Job-Company] Each job should be associated with the company that the job is at.
+\item[Contact-Company] Each contact should be associated with the company that they work at.  Possibly, also, each contact should be associated with the previous companies that the person worked at.
+\item[Note-All] A note should be able to be associated with any combination of the other objects.  For instance, if a phone interview occurred, a note should be made that is associated with the person the phone interview was with, as well as the job that the phone interview was for.
+\end{description}
+
+\item[Action on Objects] The user should be able to record information about each object.
+
+\item[Actions on Object Attributes] The user should be able to populate these attributes, as well as specify new ones.
+
+\item[Actions on Object Relationships]  The user should be able to specify these relationships between objects.
+
+\end{description}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
