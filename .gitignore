@@ -62,3 +62,6 @@ nosetests.xml
 #Emacs
 *.*~
 \#*#
+
+#DS Store
+.DS_Store
