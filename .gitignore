@@ -1,3 +1,6 @@
+#Ignore our demo dir
+medium-fidelity-prototype/demo/*
+
 *.py[cod]
 
 # C extensions
