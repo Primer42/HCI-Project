@@ -37,7 +37,7 @@ if __name__ == '__main__':
                 exit("Missing file: %s" % curFile)
     
     
-    for l in xrange(len(objNames)):
+    for l in xrange(len(objNames)+1):
         for objs in itertools.combinations(objNames, l):
             curDir = ''.join([shortNames[n] for n in objs])
             curPath = os.path.join(demoDir, curDir if len(curDir) > 0 else "START")
