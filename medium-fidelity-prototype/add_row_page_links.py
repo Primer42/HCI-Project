@@ -13,6 +13,7 @@ if __name__ == '__main__':
     originalDir = os.path.join(medFidDir, 'original_files')
     objectDirs = [p for p in [os.path.join(originalDir, n) for n in os.listdir(originalDir)] if os.path.isdir(p)]
     for od in objectDirs:
+        objectShortName = os.path.basename(od)[0]
         for fullListHTML in [os.path.join(od, '1.html'), os.path.join(od, '2.html')]:
             listSoup = BeautifulSoup(open(fullListHTML, 'r'))
             entryTable = listSoup.find_all('table')[1]
@@ -21,7 +22,7 @@ if __name__ == '__main__':
                 if ridx == 0:
                     continue
                 pageColumnTag = listSoup.new_tag('td')
-                pageLinkTag = listSoup.new_tag('a', href="./r" + str(ridx) + ".html")
+                pageLinkTag = listSoup.new_tag('a', href="./" + objectShortName + str(ridx) + ".html")
                 pageLinkTag.string = "View Details"
                 pageColumnTag.append(pageLinkTag)
                 row.append(pageColumnTag)
