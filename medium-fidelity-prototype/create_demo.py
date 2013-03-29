@@ -25,7 +25,7 @@ if __name__ == '__main__':
         exit("Original file directory does not exist: %s" % originalDir)
         
     #get our object names, and make sure we have all the files we need
-    objNames = sorted(os.listdir(originalDir))
+    objNames = sorted(d for d in os.listdir(originalDir) if os.path.isdir(os.path.join(originalDir, d)))
     shortNames = dict(zip(objNames, [n[0] for n in objNames]))
     if not len(shortNames.values()) == len(set(shortNames.values())):
         exit("Two objects have the same first character! %s" % str(objNames))
