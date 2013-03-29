@@ -154,5 +154,124 @@ We restricted ourself with HTML in our medium-prototype implementation.
  
 \end_layout
 
+\begin_layout Standard
+We decided to use HTML to prototype our project.
+ With just HTML, without any database code running, we were unable to have
+ almost any dynamic pages.
+ As mentioned above, we didn't allow the user to add any arbitrary object
+ - when they try to add an object, the form is already filled in.
+ Furthermore, they are only able to add one object of each type - one company,
+ one job, one note and one person.
+ 
+\end_layout
+
+\begin_layout Standard
+The main problem to overcome to simulate a dynamic system was storing the
+ system state.
+ Once the user adds a company, they should be able to navigate to any other
+ page, and still have the company they added present when they return to
+ the company list page.
+ We did two things that, together, allowed us to store system state, and
+ easily simulate a real system without having any code running in real time.
+ First, we made a page corresponding to each possible page the user may
+ say - the company page with just the canned data, and the company page
+ with the same data and the single new object added.
+ We made pages like this for every object, as well as an 'add object' page
+ for each object.
+ We then wrote a script that made many copies of these original files, putting
+ them in a directory structure that stores the system state.
+ The state consisted of if each of the objects had been added or not - if
+ the company had been added, if the job had been added and so on.
+ Since there are 4 objects, there are 16 possible states.
+ We represented the state as a string with a letter for each object, if
+ it was added.
+ So, if the company and job had been added but the person and note had not,
+ the state would be 'cj'.
+ If the person is then added, the state is changed to 'cjp'.
+ If, finally, the note is added, the state is 'cjnp'.
+ The script made sure that the 
+\begin_inset Quotes eld
+\end_inset
+
+Add Object
+\begin_inset Quotes erd
+\end_inset
+
+ page linked to the correct new state, when it copied that page from the
+ original location.
+ Thus, when the user adds the object, they get redirected to a page that
+ looks identical to the original list page, with the object added, and when
+ they navigate to other pages, they can return and have the object still
+ present.
+\end_layout
+
+\begin_layout Section
+Demo Creation Script Usage
+\end_layout
+
+\begin_layout Subsection
+Dependencies
+\end_layout
+
+\begin_layout Standard
+The demo creation script relies on Python version 2.7.
+ This can be downloaded from here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.python.org/download/releases/2.7/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Running the script
+\end_layout
+
+\begin_layout Standard
+Execute the script by calling:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+python2.7 <Path to script location>/create_demo.py
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This will create a directory called 
+\begin_inset Quotes eld
+\end_inset
+
+demo
+\begin_inset Quotes erd
+\end_inset
+
+ in the same directory as the 
+\begin_inset Quotes eld
+\end_inset
+
+create_demo.py
+\begin_inset Quotes erd
+\end_inset
+
+ script.
+ To run the demo, simply go to the demo directory and open the demo/START/start.h
+tml
+\end_layout
+
 \end_body
 \end_document
