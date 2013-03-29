@@ -61,10 +61,10 @@
 
 \begin_layout Title
 Assignment 5: Medium Fidelity Prototype 
-\backslash
+\begin_inset Newline newline
+\end_inset
 
-\backslash
- Job Search Tracking
+Job Search Tracking
 \end_layout
 
 \begin_layout Author
@@ -100,9 +100,8 @@ We incorporated much of the design from previous assignments into this prototype
  The syntactic flow of the user actions, as well as the general layout of
  the pages have remained the same from the original specifications and the
  storyboards.
- We concluded, it would be better to have deletion functionality for the
- objects in our design.
- Deletion could particularly be useful for jobs.
+ We realized that the ability to delete objects had not been included in
+ the previous specifications, so we decided to add that functionality.
  We also discussed about an alternative design where system is organized
  around operations instead of objects.
  There would be Create, Edit, View and Associate pages instead of objects
@@ -155,16 +154,6 @@ Limitations of Prototype Caused by the Software
 \end_layout
 
 \begin_layout Standard
-We restricted ourself with HTML in our medium-prototype implementation.
- HTML doesn’t allow creation of dynamic web pages.
- This nature of HTML resulted in differences between our design and medium
- prototype.
- Since medium-prototype doesn’t impose full functionality of design, restricting
- ourselves to HTML seemed as a fair decision to us.
- 
-\end_layout
-
-\begin_layout Standard
 We decided to use HTML to prototype our project.
  With just HTML, without any database code running, we were unable to have
  almost any dynamic pages.
@@ -184,14 +173,18 @@ The main problem to overcome to simulate a dynamic system was storing the
  We did two things that, together, allowed us to store system state, and
  easily simulate a real system without having any code running in real time.
  First, we made a page corresponding to each possible page the user may
- say - the company page with just the canned data, and the company page
+ see - the company page with just the canned data, and the company page
  with the same data and the single new object added.
  We made pages like this for every object, as well as an 'add object' page
  for each object.
  We then wrote a script that made many copies of these original files, putting
  them in a directory structure that stores the system state.
- The state consisted of if each of the objects had been added or not - if
- the company had been added, if the job had been added and so on.
+ 
+\end_layout
+
+\begin_layout Standard
+The state denoted of if each of the objects had been added or not - whether
+ the company had been added, whether the job had been added and so on.
  Since there are 4 objects, there are 16 possible states.
  We represented the state as a string with a letter for each object, if
  it was added.
@@ -207,8 +200,8 @@ Add Object
 \begin_inset Quotes erd
 \end_inset
 
- page linked to the correct new state, when it copied that page from the
- original location.
+ page linked to the correct new state directory when it copies that page
+ from the original location.
  Thus, when the user adds the object, they get redirected to a page that
  looks identical to the original list page, with the object added, and when
  they navigate to other pages, they can return and have the object still
