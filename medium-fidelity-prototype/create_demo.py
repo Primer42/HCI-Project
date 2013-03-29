@@ -7,6 +7,7 @@ import os
 import itertools
 from shutil import copyfile
 import re
+from glob import glob
 
 def mkdir(path):
     if not os.path.exists(path):
@@ -71,3 +72,7 @@ if __name__ == '__main__':
                 addFile = open(curAddPath, 'w')
                 addFile.write(addStr)
                 addFile.close()
+                #Finally, do all of the view rows
+                for rowPage in glob(os.path.join(originalDir, o, 'r*.html')):
+                    rowName = os.path.basename(rowPage)
+                    copyfile(rowPage, os.path.join(curPath, rowName))
