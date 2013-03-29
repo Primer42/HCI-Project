@@ -1,7 +1,0 @@
-We restricted ourself with HTML in our medium-prototype implementation. HTML doesn’t allow creation of dynamic web pages.  This nature of HTML resulted in differences between our design and medium prototype. Some of the notable differences are listed below. Since medium-prototype doesn’t impose full functionality of design, restricting ourselves to HTML seemed as a fair decision to us.
-
--Our prototype doesn’t come with edit functionality for objects whereas our design do.
-
--Our prototype comes with limited insert functionality for objects. When a user wants to add a new object, already filled form is shown to user. Only action user could perform on an add page is to click to “save button”. Users are also limited with 1 insertion for each object.
-
--Contacts may not be imported from different sources in the prototype.
