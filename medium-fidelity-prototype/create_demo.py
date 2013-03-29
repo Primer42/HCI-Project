@@ -75,6 +75,7 @@ if __name__ == '__main__':
                 #Finally, do all of the view rows
                 for rowPage in glob(os.path.join(originalDir, o, 'r*.html')):
                     rowName = os.path.basename(rowPage)
+                    print o, rowPage
                     copyfile(rowPage, os.path.join(curPath, rowName))
     #Copy the start page
     startDir = os.path.join(demoDir, 'START')
