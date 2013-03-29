@@ -100,6 +100,16 @@ We incorporated much of the design from previous assignments into this prototype
  The syntactic flow of the user actions, as well as the general layout of
  the pages have remained the same from the original specifications and the
  storyboards.
+ We concluded, it would be better to have deletion functionality for the
+ objects in our design.
+ Deletion could particularly be useful for jobs.
+ We also discussed about an alternative design where system is organized
+ around operations instead of objects.
+ There would be Create, Edit, View and Associate pages instead of objects
+ pages.
+ However, we decided that this design would be more confusing for users
+ and sticked with old design.
+ 
 \end_layout
 
 \begin_layout Section
