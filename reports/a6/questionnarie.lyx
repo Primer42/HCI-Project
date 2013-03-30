@@ -61,51 +61,55 @@
 
 \begin_layout Standard
 Give points on scale of 1 to 5.
+ 1 is bad, 5 is good.
 \end_layout
 
 \begin_layout Enumerate
-Did you find manual helpful for understanding usage of the system? 
+Was the manual helpful for understanding how to use the system?
+\begin_inset Newline linebreak
+\end_inset
+
+1---2---3---4---5
 \end_layout
 
 \begin_layout Enumerate
-Did you find manul clearly written?
+How clearly was the manual written?
+\begin_inset Newline linebreak
+\end_inset
+
+1---2---3---4---5
 \end_layout
 
 \begin_layout Enumerate
-How likely do you need a system like this?
+How easy was the system to use?
+\begin_inset Newline linebreak
+\end_inset
+
+1---2---3---4---5
 \end_layout
 
 \begin_layout Enumerate
-Did you find this system easy to use? 
+How would you rate the general look and feel of the system?
+\begin_inset Newline linebreak
+\end_inset
+
+1---2---3---4---5
 \end_layout
 
 \begin_layout Enumerate
-Did you find this system useful? 
+How much did you enjoy using the system?
+\begin_inset Newline linebreak
+\end_inset
+
+1---2---3---4---5
 \end_layout
 
 \begin_layout Enumerate
-Did you like look of the system? 
-\end_layout
+Overall grade?
+\begin_inset Newline linebreak
+\end_inset
 
-\begin_layout Enumerate
-Are you happy about functionality of the system?
-\end_layout
-
-\begin_layout Enumerate
-Did you enjoy using this system?
-\end_layout
-
-\begin_layout Standard
-Multiple Choice Questions
-\end_layout
-
-\begin_layout Enumerate
-This application should in the form of Desktop Application / Web Application
- /Mobile Application (Circle one or more options)
-\end_layout
-
-\begin_layout Enumerate
-Would you consider paying money to use this application? Yes / No 
+1---2---3---4---5
 \end_layout
 
 \begin_layout Standard
@@ -113,21 +117,24 @@ Open Ended Questions
 \end_layout
 
 \begin_layout Enumerate
-I would consider using this system, because ...
- 
+Which tasks were easy to complete? 
 \end_layout
 
 \begin_layout Enumerate
-I wouldn't consider using this system, because ...
- 
+Can you identify why the solutions were clear?
 \end_layout
 
 \begin_layout Enumerate
-Any complaints or suggestions about the system
+Which tasks were diffiicult to complete?
 \end_layout
 
 \begin_layout Enumerate
-Any problems and difficulites you have encountered while using the system.
+How would you redesign the solutions to the difficult task to make them
+ clearer?
+\end_layout
+
+\begin_layout Enumerate
+Any general complaints or suggestions?
 \end_layout
 
 \end_body
