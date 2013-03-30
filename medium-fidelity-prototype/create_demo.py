@@ -73,7 +73,8 @@ if __name__ == '__main__':
                     #simple case - no complicated redirection necessary
                     #just go to our local o
                     addStr = addStr.replace('ACTIONGOESHERE', 
-                                    os.path.join('.', o + '.html'))
+                                    os.path.join('.', o + '.html') + '''" onsubmit="alert('Duplicate Object!')''')
+                    
                 else:
                     dirWithOAdded = ''.join(sorted(curDir + shortNames[o]))
                     addStr = addStr.replace('ACTIONGOESHERE',
@@ -88,5 +89,5 @@ if __name__ == '__main__':
     #Copy the start page
     startDir = os.path.join(demoDir, 'START')
     copyfile(os.path.join(originalDir, 'start.html'), os.path.join(startDir, 'start.html'))
-    #copy the delete icon
+    #copy the shared files
     copyfile(os.path.join(originalDir, 'x.png'), os.path.join(demoDir, 'x.png'))
