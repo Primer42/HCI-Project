@@ -8,6 +8,7 @@ import itertools
 from shutil import copyfile
 import re
 from glob import glob
+import codecs
 
 def mkdir(path):
     if not os.path.exists(path):
@@ -49,8 +50,18 @@ if __name__ == '__main__':
                 #do the list file for this object
                 curObjPath = os.path.join(curPath, o + '.html')
                 if o in objs:
-                    copyfile(os.path.join(originalDir, o, '2.html'), 
-                             curObjPath)
+                    #replace the delete path
+                    objHTMLStr = open(os.path.join(originalDir, o, '2.html')).read()
+                    dirWithORemoved = curDir.replace(shortNames[o], '')
+                    if len(dirWithORemoved) == 0:
+                        dirWithORemoved = "START"
+                    objHTMLStr = objHTMLStr.replace("DELETEGOESHERE",
+                                        os.path.join('..', dirWithORemoved, o + '.html'))
+                    objHTMLFile = codecs.open(curObjPath, 'w')
+                    objHTMLFile.write(objHTMLStr)
+                    objHTMLFile.close()
+                    
+                    #copyfile(os.path.join(originalDir, o, '2.html'), curObjPath)
                 else:
                     copyfile(os.path.join(originalDir, o, '1.html'),
                              curObjPath)
@@ -66,10 +77,9 @@ if __name__ == '__main__':
                                     addStr)
                 else:
                     dirWithOAdded = ''.join(sorted(curDir + shortNames[o]))
-                    addStr = re.sub('ACTIONGOESHERE',
-                                    os.path.join('..', dirWithOAdded, o + '.html'),
-                                    addStr)
-                addFile = open(curAddPath, 'w')
+                    addStr = addStr.replace('ACTIONGOESHERE',
+                                            '"' + os.path.join('..', dirWithOAdded, o + '.html') + '"')
+                addFile = codecs.open(curAddPath, 'w')
                 addFile.write(addStr)
                 addFile.close()
                 #Finally, do all of the view rows
@@ -79,3 +89,5 @@ if __name__ == '__main__':
     #Copy the start page
     startDir = os.path.join(demoDir, 'START')
     copyfile(os.path.join(originalDir, 'start.html'), os.path.join(startDir, 'start.html'))
+    #copy the delete icon
+    copyfile(os.path.join(originalDir, 'x.png'), os.path.join(demoDir, 'x.png'))
