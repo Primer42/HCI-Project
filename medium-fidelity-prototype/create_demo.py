@@ -72,14 +72,13 @@ if __name__ == '__main__':
                 if o in objs:
                     #simple case - no complicated redirection necessary
                     #just go to our local o
-                    addStr = re.sub('ACTIONGOESHERE', 
-                                    os.path.join('.', o + '.html'), 
-                                    addStr)
+                    addStr = addStr.replace('ACTIONGOESHERE', 
+                                    os.path.join('.', o + '.html'))
                 else:
                     dirWithOAdded = ''.join(sorted(curDir + shortNames[o]))
                     addStr = addStr.replace('ACTIONGOESHERE',
-                                            '"' + os.path.join('..', dirWithOAdded, o + '.html') + '"')
-                addFile = codecs.open(curAddPath, 'w')
+                                            os.path.join('..', dirWithOAdded, o + '.html'))
+                addFile = open(curAddPath, 'w')
                 addFile.write(addStr)
                 addFile.close()
                 #Finally, do all of the view rows
