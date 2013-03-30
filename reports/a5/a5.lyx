@@ -21,7 +21,7 @@
 
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command default
 \index_command default
 \paperfontsize default
@@ -77,13 +77,15 @@ Prototype Video
 
 \begin_layout Standard
 A video of the prototype being used can be found here.
- 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
 
-https://www.youtube.com/VIDEO URL HERE
+http://youtu.be/gJs-ZeQcFUA
 \end_layout
 
 \end_inset
@@ -116,13 +118,9 @@ Differences from design and implementation
 \end_layout
 
 \begin_layout Standard
-There aren't many decisions that are different from the design, rather things
- that we were unable to implement from the design.
+There aren't many features that are different from the design, rather there
+ are things that we were unable to implement.
  These include, but are not limited to
-\end_layout
-
-\begin_layout Itemize
-View object details on a separate page
 \end_layout
 
 \begin_layout Itemize
@@ -130,23 +128,24 @@ Editing objects
 \end_layout
 
 \begin_layout Itemize
-Deleting objects
-\end_layout
-
-\begin_layout Itemize
 Specifying relations between objects
 \end_layout
 
 \begin_layout Itemize
-Limited insert functionality for objects.
- When a user wants to add a new object, already filled form is shown to
- user.
- Only action user could perform on an add page is to click to “save button”.
- Users are also limited with 1 insertion for each object.
+Full insert functionality for objects.
+ When a user wants to add a new object, the form is already populated with
+ a sample object of the correct type.
+ There is only one object of each type that can be added.
 \end_layout
 
 \begin_layout Itemize
-Contacts may not be imported from different sources in the prototype.
+Deleting any object.
+ The user can delete the sample object they added in a previous step, but
+ they are not able to delete objects that were in the system when they started.
+\end_layout
+
+\begin_layout Itemize
+Contact import.
 \end_layout
 
 \begin_layout Section
@@ -155,12 +154,16 @@ Limitations of Prototype Caused by the Software
 
 \begin_layout Standard
 We decided to use HTML to prototype our project.
- With just HTML, without any database code running, we were unable to have
- almost any dynamic pages.
+ With just HTML, without any database or other code running, we were unable
+ to have truely dynamic pages.
  As mentioned above, we didn't allow the user to add any arbitrary object
  - when they try to add an object, the form is already filled in.
- Furthermore, they are only able to add one object of each type - one company,
- one job, one note and one person.
+ Furthermore, 
+\strikeout on
+they
+\strikeout default
+ are only able to add one object of each type - one company, one job, one
+ note and one person.
  
 \end_layout
 
@@ -170,8 +173,8 @@ The main problem to overcome to simulate a dynamic system was storing the
  Once the user adds a company, they should be able to navigate to any other
  page, and still have the company they added present when they return to
  the company list page.
- We did two things that, together, allowed us to store system state, and
- easily simulate a real system without having any code running in real time.
+ We did two things that allowed us to store system state, and easily simulate
+ a dymanic system without having any code running in real time.
  First, we made a page corresponding to each possible page the user may
  see - the company page with just the canned data, and the company page
  with the same data and the single new object added.
@@ -186,10 +189,10 @@ The main problem to overcome to simulate a dynamic system was storing the
 The state denoted of if each of the objects had been added or not - whether
  the company had been added, whether the job had been added and so on.
  Since there are 4 objects, there are 16 possible states.
- We represented the state as a string with a letter for each object, if
- it was added.
- So, if the company and job had been added but the person and note had not,
- the state would be 'cj'.
+ We represent the state as a string with a letter for each object, if it
+ has been added.
+ For example, if the company and job had been added but the person and note
+ had not, the state would be 'cj'.
  If the person is then added, the state is changed to 'cjp'.
  If, finally, the note is added, the state is 'cjnp'.
  The script made sure that the 
@@ -203,9 +206,11 @@ Add Object
  page linked to the correct new state directory when it copies that page
  from the original location.
  Thus, when the user adds the object, they get redirected to a page that
- looks identical to the original list page, with the object added, and when
- they navigate to other pages, they can return and have the object still
- present.
+ looks identical to the original list page, but in a different directory
+ that reflects the new state, and the object added to the list.
+ When they navigate to other pages, without adding or removing objects,
+ they are staying on pages in the same directory, so the state is not lost.
+ Removing the added object was achieved in a similar way.
 \end_layout
 
 \begin_layout Section
@@ -218,13 +223,17 @@ Dependencies
 
 \begin_layout Standard
 The demo creation script relies on Python version 2.7.
- This can be downloaded from here:
+ It can be downloaded from here, or using your system's package manager.
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.python.org/download/releases/2.7/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.python.org/download/releases/2.7/
+\end_layout
 
 \end_inset
 
@@ -273,7 +282,7 @@ create_demo.py
 
  script.
  To run the demo, simply go to the demo directory and open the demo/START/start.h
-tml
+tml in your web browser.
 \end_layout
 
 \end_body
