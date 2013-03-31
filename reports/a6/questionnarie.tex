@@ -1,51 +1,57 @@
 %% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{babel}
 \usepackage[pdftex]{eforms}
 
 \newcommand{\textBox}[1]{
-\textField[\Ff\FfMultiline]{#1}{\linewidth}{48bp} \\
+\textField[\Ff\FfMultiline]{#1}{\linewidth}{48bp}
+}
+
+\newcommand{\textLine}[1]{
+\textField[]{#1}{\linewidth}{12bp}
 }
 
 \newcommand{\myRadio}[2]{
 \radioButton{#1}{10bp}{10bp}{#2}
 }
 
-\newcommand{\rankChoice}[1]{
+\newcommand{\rankChoice}[3]{
+#2 -
 1 \myRadio{#1}{1}
 2 \myRadio{#1}{2}
 3 \myRadio{#1}{3}
 4 \myRadio{#1}{4}
 5 \myRadio{#1}{5}
+- #3
 }
 
 \setlength{\parindent}{0cm}
 
 
 \begin{document}
-Give points on scale of 1 to 5. 1 is bad, 5 is good.
+
+\section{Multiple Choice}
+
 \begin{enumerate}
 \item How easy was the system to use?
 
-\rankChoice{easy to use}
+\rankChoice{easy to use}{Hard}{Easy}
 
 \item How would you rate the general look and feel of the system?
 
-\rankChoice{look and feel}
+\rankChoice{look and feel}{Dislike}{Like}
 
 \item How much did you enjoy using the system?
 
-\rankChoice{enjoy to use}
+\rankChoice{enjoy to use}{Hated}{Enjoyed}
 
 \item Overall grade?
 
-\rankChoice{overall grade}
+\rankChoice{overall grade}{Bad}{Good}
 
 \end{enumerate}
-Open Ended Questions
+
+\section{Open Ended Questions}
 
 \begin{enumerate}
 \item Which tasks were easy to complete?
@@ -74,6 +80,28 @@ Open Ended Questions
 
 \end{enumerate}
 
+\section{About You}
 
+What is your highest level of education?
+
+\textLine{education}
+
+If you went to college, what was your major?
+
+\textLine{major}
+
+How comfortable do you feel while using a computer?
+
+\rankChoice{computer literacy}{Uncomfortable}{Comfortable}
+
+\hfill
+
+Have you used a system that serves a similar purpose as this one before?
+
+\textLine{similar systems}
+
+How old are you? If you are uncomfortable answering exactly, feel free to round to a nearby age.
+
+\textLine{age}
 
 \end{document}
