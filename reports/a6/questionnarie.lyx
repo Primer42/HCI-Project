@@ -65,22 +65,6 @@ Give points on scale of 1 to 5.
 \end_layout
 
 \begin_layout Enumerate
-Was the manual helpful for understanding how to use the system?
-\begin_inset Newline linebreak
-\end_inset
-
-1---2---3---4---5
-\end_layout
-
-\begin_layout Enumerate
-How clearly was the manual written?
-\begin_inset Newline linebreak
-\end_inset
-
-1---2---3---4---5
-\end_layout
-
-\begin_layout Enumerate
 How easy was the system to use?
 \begin_inset Newline linebreak
 \end_inset
@@ -129,8 +113,7 @@ Which tasks were diffiicult to complete?
 \end_layout
 
 \begin_layout Enumerate
-How would you redesign the solutions to the difficult task to make them
- clearer?
+How would you make those tasks easier to complete?
 \end_layout
 
 \begin_layout Enumerate
