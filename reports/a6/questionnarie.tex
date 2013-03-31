@@ -1,0 +1,79 @@
+%% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\usepackage[pdftex]{eforms}
+
+\newcommand{\textBox}[1]{
+\textField[\Ff\FfMultiline]{#1}{\linewidth}{48bp} \\
+}
+
+\newcommand{\myRadio}[2]{
+\radioButton{#1}{10bp}{10bp}{#2}
+}
+
+\newcommand{\rankChoice}[1]{
+1 \myRadio{#1}{1}
+2 \myRadio{#1}{2}
+3 \myRadio{#1}{3}
+4 \myRadio{#1}{4}
+5 \myRadio{#1}{5}
+}
+
+\setlength{\parindent}{0cm}
+
+
+\begin{document}
+Give points on scale of 1 to 5. 1 is bad, 5 is good.
+\begin{enumerate}
+\item How easy was the system to use?
+
+\rankChoice{easy to use}
+
+\item How would you rate the general look and feel of the system?
+
+\rankChoice{look and feel}
+
+\item How much did you enjoy using the system?
+
+\rankChoice{enjoy to use}
+
+\item Overall grade?
+
+\rankChoice{overall grade}
+
+\end{enumerate}
+Open Ended Questions
+
+\begin{enumerate}
+\item Which tasks were easy to complete?
+
+\textBox{Which tasks were easy to complete?}
+
+\item Can you identify why the solutions were clear?
+
+\textBox{Can you identify why the solutions were clear?}
+
+\item Which tasks were difficult to complete?
+
+\textBox{Which tasks were difficult to complete?}
+
+\item How would you make those tasks easier to complete?
+
+\textBox{How would you make those tasks easier to complete?}
+
+\item Were there any instructions, vocabulary or labels that you found confusing?
+
+\textBox{Were there any instructions, vocabulary or labels that you found confusing?}
+
+\item Any general complaints or suggestions?
+
+ \textBox{Any general complaints or suggestions?}
+
+\end{enumerate}
+
+
+
+\end{document}
