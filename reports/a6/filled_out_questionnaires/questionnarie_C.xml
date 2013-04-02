@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields xmlns:xfdf="http://ns.adobe.com/xfdf-transition/">
+<RadioButton0 xfdf:original="easy to use">5</RadioButton0>
+<RadioButton1 xfdf:original="look and feel">2</RadioButton1>
+<RadioButton2 xfdf:original="enjoy to use">3</RadioButton2>
+<RadioButton3 xfdf:original="overall grade">3</RadioButton3>
+<TextField4 xfdf:original="Which tasks were easy to complete?">Adding entries to all sections was particularly easy.</TextField4>
+<TextField5 xfdf:original="Can you identify why the solutions were clear?">The "Add ____" link is the first element of the page that stood out when I read it, and clicking through the form page with all the default info already filled out was simple.</TextField5>
+<TextField6 xfdf:original="Which tasks were difficult to complete?">Deleting tasks was not difficult, but would have been tougher had all elements been deletable as the most distinctive part of the new entries was the presence of the delete icon at the end of the row.</TextField6>
+<TextField7 xfdf:original="How would you make those tasks easier to complete?">A "date added" element would make it easier to identify entries added during the test and distiguish them from older test data. Thinning the borders and coloring alternating rows would also help make the table more readable.</TextField7>
+<TextField8 xfdf:original="Were there any instructions, vocabulary or labels that you found confusing?">The instruction to view a note about a person (question 3) lead me to believe that the information would be found under the "person" tab, when in fact I should have been looking for the "notes" tab.</TextField8>
+<TextField9 xfdf:original="Any general complaints or suggestions?">Some CSS would go a long way towards making the interface friendlier.</TextField9>
+<TextField10 xfdf:original="education">Bachelor's degree</TextField10>
+<TextField11 xfdf:original="major">Computer Science & Physics</TextField11>
+<RadioButton12 xfdf:original="computer literacy">5</RadioButton12>
+<TextField13 xfdf:original="similar systems">I have not used a job tracking system before.</TextField13>
+<TextField14 xfdf:original="age">25</TextField14>
+</fields>

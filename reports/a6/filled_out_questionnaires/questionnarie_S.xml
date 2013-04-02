@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields xmlns:xfdf="http://ns.adobe.com/xfdf-transition/">
+<RadioButton0 xfdf:original="easy to use">5</RadioButton0>
+<RadioButton1 xfdf:original="look and feel">3</RadioButton1>
+<RadioButton2 xfdf:original="enjoy to use">3</RadioButton2>
+<RadioButton3 xfdf:original="overall grade">4</RadioButton3>
+<TextField4 xfdf:original="Which tasks were easy to complete?">All of it, once I understood what they were asking for (see 5).</TextField4>
+<TextField5 xfdf:original="Can you identify why the solutions were clear?">The vocabulary used to give the instructions was similar to the vocabulary used for buttons/links within the UI</TextField5>
+<TextField6 xfdf:original="Which tasks were difficult to complete?">none</TextField6>
+<TextField7 xfdf:original="How would you make those tasks easier to complete?">N/A</TextField7>
+<TextField8 xfdf:original="Were there any instructions, vocabulary or labels that you found confusing?">It took me several readings to understand the instruction to view a note about John Doe, although that may have been because I was rushing.</TextField8>
+<TextField9 xfdf:original="Any general complaints or suggestions?">It was clear what I was meant to do, but I felt like I had to click many times to get to where I wanted to be. This might just be due to the simplification for the demo, ie because I never had to type anything, and the "details" were the same as the summaries.</TextField9>
+<TextField10 xfdf:original="education">4 years college</TextField10>
+<TextField11 xfdf:original="major">math</TextField11>
+<RadioButton12 xfdf:original="computer literacy">5</RadioButton12>
+<TextField13 xfdf:original="similar systems">I don't think so.</TextField13>
+<TextField14 xfdf:original="age">23</TextField14>
+</fields>
