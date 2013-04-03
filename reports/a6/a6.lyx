@@ -69,7 +69,7 @@ User Information
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0pt">
 <row>
@@ -897,6 +897,145 @@ S complained about how much she had to click for each of the tasks.
 \end_deeper
 \begin_layout Section
 Observations of users, and other verbal comments they made
+\end_layout
+
+\begin_layout Subsection
+Observations about the demo
+\end_layout
+
+\begin_layout Itemize
+Almost every user found the uneditable fields confusing.
+ They understand from previous experience that they are usually able to
+ fill in fields.
+ We should try very hard to make our next demo not have this.
+\end_layout
+
+\begin_layout Itemize
+All users thought the current demo was unattractive, and that colored their
+ opinion of it.
+ We should also strive to make the next demo much more visually appealing
+\end_layout
+
+\begin_layout Itemize
+Our current links do not draw the eye enough.
+ We should try to make these more clear, perhaps into buttons, for the next
+ demo.
+\end_layout
+
+\begin_layout Itemize
+Four users had trouble understanding our introduction page.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One suggested we refer to ‘people’, ‘jobs’, ‘companies’ and ‘notes’ as ‘entries’
+ instead of ‘objects’.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Three of the users read the third task quickly, and went to the details
+ about “John Doe” on the person page instead of the note about him.
+ Once they were prompted to re-read the task, they took the correct action.
+\end_layout
+
+\begin_layout Itemize
+The second open ended question on the questionnaire was confusing.
+ For two users, it was not clear what was being asked.
+\end_layout
+
+\begin_layout Itemize
+Two of the users noted that the “view details” page for each entry was the
+ same as the list item for that entry.
+ We should have more data on those pages for the future demos.
+ Two users noted that deleting objects was too easy, since there was only
+ one row with a delete button.
+\end_layout
+
+\begin_layout Subsection
+Observations about the design
+\end_layout
+
+\begin_layout Itemize
+Deleting entries should be harder - an accidental click deletes objects
+ at this point.
+ We either should add a confirmation page or an undo button.
+\end_layout
+
+\begin_layout Itemize
+Many users wanted it to be easier to move from one type of entry to another
+ and add entries of different types from one page.
+ This yields two possible changes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One or more ‘Add X’ buttons for each entry, that, for example, allows you
+ to add a job at a company from that companies entry, rather than having
+ to go to the job page to add the job.
+ Perhaps this would best be done using a dropdown menu.
+\end_layout
+
+\begin_layout Itemize
+The “details” page for each entry should have links to the other relevant
+ entries.
+ For example, if a person is mentioned in several notes, those notes should
+ appear on their details page.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Two users suggested there should be more dates in the program.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One wanted to be able to add relevant dates to notes or jobs, and have them
+ appear on a calendar page
+\end_layout
+
+\begin_layout Itemize
+Another wanted “last edited” or “created” dates for each entry
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+One user suggested a totally different layout for our program, based on
+ a schoolwork tracking program she used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Will/Downloads/new layout.png
+	width 75theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+New Layout Suggestion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
