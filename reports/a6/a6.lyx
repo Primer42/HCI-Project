@@ -218,7 +218,7 @@ Math
 \begin_inset Text
 
 \begin_layout Plain Layout
-RE
+R
 \end_layout
 
 \end_inset
@@ -265,7 +265,7 @@ Linguistics
 \begin_inset Text
 
 \begin_layout Plain Layout
-OO
+O
 \end_layout
 
 \end_inset
@@ -745,7 +745,7 @@ Which tasks were easy to complete?
 \begin_deeper
 \begin_layout Enumerate
 4 of the users said all tasks were easy to complete.
- (RE, L, OO, S)
+ (R, L, O, S)
 \end_layout
 
 \begin_layout Enumerate
@@ -773,7 +773,7 @@ A few comments about the clarity of the interface, how it was uncluttered.
 
 \begin_layout Enumerate
 A few more said the vocabulary used in the instructions and the UI was self
- explanatory (S, RE)
+ explanatory (S, R)
 \end_layout
 
 \begin_layout Enumerate
@@ -787,7 +787,7 @@ Which tasks were dicult to complete?
 
 \begin_deeper
 \begin_layout Enumerate
-4 of the 5 users said 'None' (RE, L, OO, S)
+4 of the 5 users said 'None' (R, L, O, S)
 \end_layout
 
 \begin_layout Enumerate
@@ -802,11 +802,11 @@ How would you make those tasks easier to complete?
 
 \begin_deeper
 \begin_layout Enumerate
-2 said 'N/A' (RE, S)
+2 said 'N/A' (R, S)
 \end_layout
 
 \begin_layout Enumerate
-OO wanted a better looking interface
+O wanted a better looking interface
 \end_layout
 
 \begin_layout Enumerate
@@ -830,7 +830,7 @@ Were there any instructions, vocabulary or labels that you found confusing?
 
 \begin_deeper
 \begin_layout Enumerate
-2 uses said 'No' (RE, OO)
+2 uses said 'No' (R, O)
 \end_layout
 
 \begin_layout Enumerate
@@ -876,7 +876,7 @@ Any general complaints or suggestions?
 \begin_deeper
 \begin_layout Enumerate
 Most of the responses were about the ugliness of the GUI.
- (RE, C, OO)
+ (R, C, O)
 \end_layout
 
 \begin_deeper
@@ -885,7 +885,7 @@ C reccommended some CSS.
 \end_layout
 
 \begin_layout Enumerate
-OO wanted more color
+O wanted more color
 \end_layout
 
 \end_deeper
