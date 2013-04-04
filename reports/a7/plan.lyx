@@ -1,0 +1,247 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Functionality
+\end_layout
+
+\begin_layout Itemize
+Get full functionality working
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+at least, to the point where users can enter their own entries, delete arbritrar
+y entries, and specify arbitrary relations between entries
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+SQLite Database 
+\begin_inset Formula $\leftrightarrow$
+\end_inset
+
+PHP 
+\begin_inset Formula $\leftrightarrow$
+\end_inset
+
+HTML & CSS
+\end_layout
+
+\begin_layout Section
+Design Changes
+\end_layout
+
+\begin_layout Standard
+In no particular order
+\end_layout
+
+\begin_layout Subsection
+Realistic Goals
+\end_layout
+
+\begin_layout Itemize
+Make things pretier
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+HTML layouts with CSS should help a lot
+\end_layout
+
+\begin_layout Itemize
+more color
+\end_layout
+
+\begin_layout Itemize
+More icons
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Company 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ factory
+\end_layout
+
+\begin_layout Itemize
+People 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ siloette
+\end_layout
+
+\begin_layout Itemize
+Notes 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Notepad
+\end_layout
+
+\begin_layout Itemize
+Jobs 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+briefcase? dollar sign?
+\end_layout
+
+\begin_layout Itemize
+Site logo
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Alternate the color of each row
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+More dates
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+date last edited
+\end_layout
+
+\begin_layout Itemize
+date created
+\end_layout
+
+\begin_layout Itemize
+add your own relevant dates
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Change details page
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Less details about each entry on its list page
+\end_layout
+
+\begin_layout Itemize
+More details on the entry details page
+\end_layout
+
+\begin_layout Itemize
+View all of the entries related to this entry
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Buttons to add entries of any type on each entrys' row
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Click on the add button for a specific company to add a job related that
+ company
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Promt 
+\begin_inset Quotes eld
+\end_inset
+
+Do you really want to delete?
+\begin_inset Quotes erd
+\end_inset
+
+ before deleting an entry
+\end_layout
+
+\begin_layout Subsection
+Stretch Goals
+\end_layout
+
+\begin_layout Itemize
+Sort entries
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+alphabetically
+\end_layout
+
+\begin_layout Itemize
+by various dates
+\end_layout
+
+\begin_layout Itemize
+etc
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Make buttons for an entry show up only when hovering over that row
+\end_layout
+
+\end_body
+\end_document
