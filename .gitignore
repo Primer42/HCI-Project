@@ -68,3 +68,6 @@ nosetests.xml
 
 #DS Store
 .DS_Store
+
+#Eclipse
+.metadata
