@@ -71,3 +71,5 @@ nosetests.xml
 
 #Eclipse
 .metadata
+.buildpath
+.settings
