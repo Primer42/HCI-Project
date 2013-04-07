@@ -4,6 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome to Job Tracker</title>
 </head>
+<?php 
+include_once '../lib/header.inc';
+?>
+
 <body>
 
 Welcome to the Job Tracking Demo!  
@@ -21,18 +25,12 @@ For example, if you want to add a job, it will have to be a pre-populated job. Y
 <p>
 Also, there are a few features which are currently not present that  will be present for the interactive program.
 <p>
-Click any of the navigation links below to get started.
+Click any of the navigation links above to get started.
 <p>
-
-<table border="1">
-<tr>
-<td><a href="./company.html">Companies</a></td>
-<td><a href="./job.html">Jobs</a> </td>
-<td><a href="./person.html">People</a></td>
-<td><a href="./note.html">Notes</a></td>
-</tr>
-</table> 
-
 
 </body>
 </html>
+
+<?php 
+include_once '../lib/footer.inc';
+?>
