@@ -73,3 +73,6 @@ nosetests.xml
 .metadata
 .buildpath
 .settings
+
+#Ignore the sqlite database
+*.sqlite
