@@ -14,10 +14,9 @@ list_entries('company');
 ?>
 
 
-</body>
-
-
-
 <?php 
 include_once '../lib/footer.inc';
 ?>
+
+
+</body>
