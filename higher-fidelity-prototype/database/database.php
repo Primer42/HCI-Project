@@ -31,6 +31,12 @@ function get_entry($database, $name, $type) {
 	return exec_query($database, $query);
 }
 
+function get_all_entries_of_type($database, $type) {
+	global $type_map;
+	$query = join(' ', ['SELECT * FROM Entries WHERE type=', $type_map[$type]]);
+	return exec_query($database, $query);
+}
+
 function add_attribute($database, $entryName, $entryType, $attribKey, $attribVal) {
 	global $type_map;
 	$query = 'INSERT INTO Attributes VALUES (' . join(', ', ['NULL', quote_and_escape_text($entryName), $type_map[$entryType], quote_and_escape_text($attribKey), quote_and_escape_text($attribVal)]) . ')'; 	
@@ -89,6 +95,7 @@ function open_db() {
 	
 	if($add_test_data) {
 		add_entry($database, 'Tufts University', 'company');
+		add_entry($database, 'Foo Inc', 'company');
 		add_attribute($database, 'Tufts University', 'company', 'Address', '419 Boston Ave, Medford MA');
 		add_entry($database, 'Teacher Assistant', 'job');
 		add_attribute($database, 'Teacher Assistant', 'job', 'Description', 'TA for CS Class');
