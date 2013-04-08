@@ -1,0 +1,11 @@
+How to use this Higher Fidelity Prototype:
+
+This is a php website, and thus needs to be hosted at a location.  For the purposes of this readme, we'll be hosting the site on your local machine.
+This isn't the only way to host it, just an easy one.
+
+1) Download and install XAMPP for your computer from http://www.apachefriends.org/en/xampp.html
+2) XAMPP should have created a directory somewhere called 'xampp/htdocs' which is the hosted directory. Find it.
+3) Add our code to a subdirectory of xampp/htdocs, either by copying the code or cloning it from github to that directory.
+3.1) To clone to a specific location using the github GUI, first stop tracking the repository, then go to the repository page, right click on the "HCI-Project" repository, and select 'clone to...' and select xampp/htdocs.
+4) Start apache using the xampp control panel.
+5) Open start.php from the higher fidelity prototype. 
