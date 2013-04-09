@@ -46,7 +46,7 @@ function add_attribute($database, $entryName, $entryType, $attribKey, $attribVal
 
 function get_all_entry_attributes($database, $entryName, $entryType) {
 	global $type_map;
-	$query = join(' ', array("SELECT * FROM Attributes WHERE entryName=", quote_and_escape_text($name), "AND entryType=", $type_map[$type]));
+	$query = join(' ', array("SELECT * FROM Attributes WHERE entryName=", quote_and_escape_text($entryName), "AND entryType=", $type_map[$entryType]));
 	return exec_query($database, $query);
 }
 
