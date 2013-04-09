@@ -1,8 +1,6 @@
 <?php
 
 include_once __DIR__ . '/../database/database.php';
-include_once __DIR__ . '/../lib/header.php';
-include_once __DIR__ . '/../lib/footer.php';
 
 function get_type_selection_dropdown($fieldName) {
 	return <<<TYPESELECT
