@@ -1,15 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome to Job Tracker</title>
-</head>
 <?php 
-include_once '../lib/header.inc';
-?>
+include_once __DIR__ . '/../lib/header.php';
+include_once __DIR__ . '/../lib/footer.php';
 
-<body>
+echo_header("Welcome!");
 
+echo <<<START
 Welcome to the Job Tracking Demo!  
 <p>
 This is a user interface demo for a job, network or position tracking program designed by William Richard and Guvenc Usanmaz.
@@ -28,9 +23,10 @@ Also, there are a few features which are currently not present that  will be pre
 Click any of the navigation links above to get started.
 <p>
 
-</body>
-</html>
+START;
 
-<?php 
-include_once '../lib/footer.inc';
+echo_footer();
+
 ?>
+
+
