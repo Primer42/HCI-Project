@@ -50,7 +50,7 @@ if(isset($_POST['name'])) {
 		handle_attribute($database, $i, $entryName, $computerType);
 		handle_relation($database, $i, $entryName, $computerType);
 	}
-	
+	$database->close();
 }
 
 
