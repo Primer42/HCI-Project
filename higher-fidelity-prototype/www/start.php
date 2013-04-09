@@ -2,10 +2,11 @@
 include_once __DIR__ . '/../lib/header.php';
 include_once __DIR__ . '/../lib/footer.php';
 
-echo_header("Welcome!");
 
-echo <<<START
-Welcome to the Job Tracking Demo!  
+$pageTitle = "Welcome!";
+
+function getPageContent() {
+	return "Welcome to the Job Tracking Demo!  
 <p>
 This is a user interface demo for a job, network or position tracking program designed by William Richard and Guvenc Usanmaz.
 <p>
@@ -22,10 +23,10 @@ Also, there are a few features which are currently not present that  will be pre
 <p>
 Click any of the navigation links above to get started.
 <p>
+";
+}
 
-START;
-
-echo_footer();
+include __DIR__ . '/../lib/template.php';
 
 ?>
 

@@ -4,8 +4,8 @@ include_once __DIR__ . '/../database/database.php';
 include_once __DIR__ . '/../lib/header.php';
 include_once __DIR__ . '/../lib/footer.php';
 
-function echo_type_selection_dropdown($fieldName) {
-	echo <<<TYPESELECT
+function get_type_selection_dropdown($fieldName) {
+	return <<<TYPESELECT
 <select name="$fieldName">
 <option value="company">Company</option>
 <option value="person">Person</option>
@@ -54,11 +54,11 @@ if(isset($_POST['name'])) {
 }
 
 
+$pageTitle = "Add" . $humanType;
 
-
-echo_header('Add ' . $humanType);
+function getPageContent() {
 	
-echo <<<ADD
+return <<<ADD
 <form name='addform' method='post' action=''>
 <h1>Name: (Required)</h1> <input type="text" name="name"><br>
 
@@ -89,52 +89,52 @@ echo <<<ADD
 		<td><input type="text" name="v5"> </td>
 	</tr>
 </table>
-ADD;
-echo '
+ADD
+	. '
 <h1> Relations </h1>
 <table>
 	<tr> <th>Other Entry Type</th> <th>Other Entry Name</th> <th> Relation Name </th> </tr>
 	<tr>
 		<td>
-';
-echo_type_selection_dropdown("r1type");
-echo '
+'.
+get_type_selection_dropdown("r1type")
+. '
 </td>
 		<td><input type="text" name="r1entry"></td>
 		<td><input type="text" name="r1name"></td> 
 	<tr>
 	<tr>
 		<td>
-';
-		echo_type_selection_dropdown("r2type");
-echo '
+' .
+		get_type_selection_dropdown("r2type")
+.'
 		</td>
 		<td><input type="text" name="r2entry"></td>
 		<td><input type="text" name="r2name"></td> 
 	<tr>
 	<tr>
 		<td>
-';
-		echo_type_selection_dropdown("r3type");
-echo '
+'.
+		get_type_selection_dropdown("r3type").
+'
 </td>
 		<td><input type="text" name="r3entry"></td>
 		<td><input type="text" name="r3name"></td> 
 	<tr>
 	<tr>
 		<td>
-';
-		echo_type_selection_dropdown("r4type");
-echo '
+'.
+		get_type_selection_dropdown("r4type")
+.'
 		</td>
 		<td><input type="text" name="r4entry"></td>
 		<td><input type="text" name="r4name"></td> 
 	<tr>
 	<tr>
 		<td>
-';
-		echo_type_selection_dropdown("r5type");
-echo '
+'.
+		get_type_selection_dropdown("r5type").
+'
 		</td>
 		<td><input type="text" name="r5entry"></td>
 		<td><input type="text" name="r5name"></td> 
@@ -145,8 +145,9 @@ echo '
 <button type="button" onclick="history.go(-1);return true;"> Cancel </button>		
 
 ';
-	
-echo_footer();
+}
+
+include __DIR__ . '/../lib/template.php';
 
 
 ?>

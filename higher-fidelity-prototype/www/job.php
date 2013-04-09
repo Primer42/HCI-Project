@@ -2,5 +2,12 @@
 
 require __DIR__ . '/../lib/list.php';
 
-echo_list_page('job', 'Job');
+$pageTitle = "Jobs";
+
+function getPageContent() {
+	return get_list_page('job', 'Job');
+}
+
+include __DIR__ . '/../lib/template.php';
+
 ?>
