@@ -16,14 +16,50 @@ function echo_type_selection_dropdown($fieldName) {
 TYPESELECT;
 }
 
+function post_set($fieldName) {
+	return isset($_POST[$fieldName]) and !empty($_POST[$fieldName]);
+}
+
+function handle_attribute($database, $num, $entryName, $entryType) {
+	$keyName = 'k' . $num;
+	$valName = 'v' . $num;
+	
+	if(post_set($keyName) and post_set($valName)) {
+		add_attribute($database, $entryName, $entryType, $_POST[$keyName], $_POST[$valName]);
+	}
+}
+
+function handle_relation($database, $num, $baseName, $baseType) {
+	$otherEntryTypeField = 'r' . $num . 'type';
+	$otherEntryNameField = 'r' . $num . 'entry';
+	$relationNameField = 'r' . $num . 'name';
+	if(post_set($otherEntryNameField) and post_set($otherEntryTypeField) and post_set($relationNameField)) {
+		add_relation($database, $baseName, $baseType, $_POST[$otherEntryNameField], $_POST[$otherEntryTypeField], $_POST[$relationNameField]);
+	}
+}
+
 
 $computerType = $_GET["cType"];
 $humanType = $_GET["hType"];
-					
+
+if(isset($_POST['name'])) {
+	$entryName = $_POST['name'];
+	$database = open_db();
+	add_entry($database, $entryName, $computerType);
+	for($i=1; $i<=5; $i++) {
+		handle_attribute($database, $i, $entryName, $computerType);
+		handle_relation($database, $i, $entryName, $computerType);
+	}
+	
+}
+
+
+
+
 echo_header('Add ' . $humanType);
 	
 echo <<<ADD
-<form>
+<form name='addform' method='post' action=''>
 <h1>Name: (Required)</h1> <input type="text" name="name"><br>
 
 <h1>Attributes</h1>

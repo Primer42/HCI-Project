@@ -21,8 +21,7 @@ function exec_query($database, $query) {
 function add_entry($database, $name, $type) {
 	global $type_map;
 	$name = '"' . SQLite3::escapeString($name) . '"';
-	//$query = "INSERT INTO Entries VALUES (" . join(', ', array($name, $type_map[$type])) . ")";
-	$query = "INSERT INTO Entries VALUES (" . join(', ', array($name, $type_map[$type])) . ")";
+	$query = "INSERT OR REPLACE INTO Entries VALUES (" . join(', ', array($name, $type_map[$type])) . ")";
 	exec_query($database, $query);
 }
 
@@ -41,7 +40,7 @@ function get_all_entries_of_type($database, $type) {
 
 function add_attribute($database, $entryName, $entryType, $attribKey, $attribVal) {
 	global $type_map;
-	$query = 'INSERT INTO Attributes VALUES (' . join(', ', array('NULL', quote_and_escape_text($entryName), $type_map[$entryType], quote_and_escape_text($attribKey), quote_and_escape_text($attribVal))) . ')'; 	
+	$query = 'INSERT OR REPLACE INTO Attributes VALUES (' . join(', ', array(quote_and_escape_text($entryName), $type_map[$entryType], quote_and_escape_text($attribKey), quote_and_escape_text($attribVal))) . ')'; 	
 	exec_query($database, $query);
 }
 
@@ -53,7 +52,7 @@ function get_all_entry_attributes($database, $entryName, $entryType) {
 
 function add_relation($database, $e1name, $e1type, $e2name, $e2type, $relationName) {
 	global $type_map;
-	$query = 'INSERT INTO Relations VALUES(' . join(', ', array('NULL', quote_and_escape_text($relationName), quote_and_escape_text($e1name), $type_map[$e1type], quote_and_escape_text($e2name), $type_map[$e2type])) . ')';
+	$query = 'INSERT OR REPLACE INTO Relations VALUES(' . join(', ', array(quote_and_escape_text($relationName), quote_and_escape_text($e1name), $type_map[$e1type], quote_and_escape_text($e2name), $type_map[$e2type])) . ')';
 	exec_query($database, $query);
 }
 
@@ -85,11 +84,14 @@ function open_db() {
 	
 	$create_queries  = array(
 		'CREATE TABLE IF NOT EXISTS Entries' .
-		'(name TEXT, type INTEGER, PRIMARY KEY(name, type))',
+			'(name TEXT, type INTEGER, PRIMARY KEY(name, type))',
 		'CREATE TABLE IF NOT EXISTS Attributes' .
-		'(attribid INTEGER PRIMARY KEY, entryName TEXT, entryType INTEGER, key TEXT NOT NULL, value TEXT NOT NULL, FOREIGN KEY(entryName, entryType) REFERENCES Entries(name, type))',
+			'(entryName TEXT, entryType INTEGER, key TEXT NOT NULL, value TEXT NOT NULL, ' .
+			'FOREIGN KEY(entryName, entryType) REFERENCES Entries(name, type), PRIMARY KEY(entryName, entryType, key))',
 		'CREATE TABLE IF NOT EXISTS Relations' .
-		'(relationid INTEGER PRIMARY KEY, name TEXT NOT NULL, e1name TEXT, e1type INTEGER, e2name TEXT, e2type INTEGER, FOREIGN KEY(e1name, e1type) REFERENCES Entries(name, type), FOREIGN KEY(e2name, e2type) REFERENCES Entries(name, type))',		
+			'(name TEXT NOT NULL, e1name TEXT, e1type INTEGER, e2name TEXT, e2type INTEGER,' .
+			'FOREIGN KEY(e1name, e1type) REFERENCES Entries(name, type), FOREIGN KEY(e2name, e2type) REFERENCES Entries(name, type)' .
+			'PRIMARY KEY (e1name, e1type, e2name, e2type, name))'
 	);
 	foreach ($create_queries as $query) {
 		exec_query($database, $query);
