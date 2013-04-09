@@ -27,9 +27,10 @@ function get_entries_table($type) {
 		} else {
 			$ret = $ret . '<tr class="odd">';
 		}
-		$ret = $ret . "<td>" . $entry['name'] . "</td>";
-		$ret = $ret .  "<td> BUTTONS GO HERE </td>";
-		$ret = $ret .  "</tr>
+		$name = $entry['name'];
+		$ret = $ret . "<td>" . $name . "</td>";
+		$ret = $ret . "<td><button type=\"button\" onclick=\"location.href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . '\'">Details</button></td>';
+		$ret = $ret . "</tr>
 				";
 		$isEven = !$isEven;
 	}
@@ -41,59 +42,11 @@ function get_entries_table($type) {
 	
 }
 
-function echo_entries_table($type) {
-	$database = open_db();
-	
-	$entries = get_all_entries_of_type($database, $type);
-
-	
-	$numCol = 2;
-	//Write the table header
-	
-	echo "<table border='1'>
-			<tr>
-			<th>Name</th>
-			<th>Buttons</th>
-			</tr>
-			";
-	
-	$isEven = False;
-
-	while($entry = $entries->fetchArray()) {
-		if($isEven){
-			echo '<tr class="even">';
-		} else {
-			echo '<tr class="odd">';
-		}
-		echo "<td>" . $entry['name'] . "</td>";
-		echo "<td> BUTTONS GO HERE </td>";
-		echo "</tr>
-				";
-		$isEven = !$isEven;
-	}
-	echo "</table>";
-	
-	$database->close();
-}
-
 function get_list_page($computerType, $humanType) {
-	return 	<<<ADDBUTTON
-	<button type="button" onclick="location.href='add.php?cType=$computerType\&hType=$humanType'">Add $humanType</button>
-
-ADDBUTTON
+	return "<button type=\"button\" onclick=\"location.href='add.php?" . http_build_query(array('cType' => $computerType, 'hType' => $humanType)) . '\'">Add ' . $humanType . '</button>'
 	. get_entries_table($computerType);
 			
 
-}
-
-function echo_list_page($computerType, $humanType) {
-	echo_header($humanType);
-	echo <<<ADDBUTTON
-	<button type="button" onclick="location.href='add.php?cType=$computerType\&hType=$humanType'">Add $humanType</button>
-
-ADDBUTTON;
-	echo_entries_table($computerType);
-	echo_footer();
 }
 
 ?>
