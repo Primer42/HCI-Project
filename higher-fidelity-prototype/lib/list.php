@@ -42,6 +42,10 @@ function echo_entries_table($type) {
 
 function echo_list_page($computerType, $humanType) {
 	echo_header($humanType);
+	echo <<<ADDBUTTON
+	<button type="button" onclick="location.href='add.php?cType=$computerType\&hType=$humanType'">Add $humanType</button>
+
+ADDBUTTON;
 	echo_entries_table($computerType);
 	echo_footer();
 }
