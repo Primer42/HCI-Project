@@ -1,10 +1,10 @@
 <?php
 
 $db_loc = __DIR__ . '/db.sqlite';
-$type_map = ["company" => 1,
+$type_map = array("company" => 1,
 			"job" => 2,
 			"person" => 3,
-			"note" => 4];
+			"note" => 4);
 
 function quote_and_escape_text($text) {
 	return '"' . SQLite3::escapeString($text) . '"';
@@ -21,7 +21,7 @@ function exec_query($database, $query) {
 function add_entry($database, $name, $type) {
 	global $type_map;
 	$name = '"' . SQLite3::escapeString($name) . '"';
-	$query = "INSERT INTO Entries VALUES (" . join(', ', [$name, $type_map[$type]]) . ")";
+	$query = "INSERT INTO Entries VALUES (" . join(', ', array($name, $type_map[$type]) . ")";
 	exec_query($database, $query);
 }
 
