@@ -1,5 +1,40 @@
 @CHARSET "ISO-8859-1";
 
+/*Header/menubar styling */
+
+
+#header table
+{
+	align:left;
+	width:100%;	
+}
+
+#header td
+{
+	align:center;
+	text-align:center;
+}
+
+#header h3
+{
+	color:green;
+}
+
+#header h3 img 
+{
+	width:48px;
+	height:48px;
+}
+#header a img
+{
+	width:64px;
+	height:64px;
+	
+}
+
+
+
+/* To alternate list row attributes */
 .even{background-color:white;}
 .odd{background-color:azure;}
 
