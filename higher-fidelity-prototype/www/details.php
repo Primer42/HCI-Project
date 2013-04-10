@@ -47,18 +47,29 @@ function get_relation_table($relations, $ourName, $ourType) {
 	
 	while($relation = $relations->fetchArray()) {
 		if($isEven) {
-			$ret = $ret . '<tr class="even">';
+			$ret = $ret . '<tr class="even">
+					';
 		} else {
-			$ret = $ret . '<tr class="odd">';
+			$ret = $ret . '<tr class="odd">
+					';
 		}
 		
-		$ret = $ret . "<td>" . $relation['name'] . "</td>";
+		$ret = $ret . "<td>" . $relation['name'] . "</td>
+				";
+		$entryName = '';
+		$entryType = '';
 		if($relation['e1name'] == $ourName and $relation['e1type'] == $type_map[$ourType]) {
-			$ret = $ret . "<td>" . $relation['e2name'] . "</td>";	
+			$entryName = $relation['e2name'];
+			$entryType = array_search($relation['e2type'], $type_map);	
 		} else {
-			$ret = $ret . "<td>" . $relation['e1name'] . "</td>";
-		}	
+			$entryName = $relation['e1name'];
+			$entryType = array_search($relation['e1type'], $type_map);
+		}
+		$ret = $ret . "<td><a href='details.php?" . http_build_query(array('name'=>$entryName, 'type'=>$entryType)) . "'>$entryName</a></td>
+		";
 		$isEven = !$isEven;
+		$ret = $ret . "</tr>
+				";
 	}
 	$ret = $ret . "</table>";
 	
