@@ -76,7 +76,20 @@ a:hover {
 }
 
 table {
-	border:0px;
+	border:0 none;
+	border-radius:5px;
+	background-color:#EFEFEF;
+	/*border-spacing:0px;*/
+	padding: 5px;
+	
+}
+
+tr, th {
+	padding:4px;
+}
+
+tbody tr:hover {
+	background-color:#FFFFE6;
 }
 
 /* To alternate list row attributes */

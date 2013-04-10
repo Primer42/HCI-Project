@@ -8,11 +8,12 @@ $type = $_GET["type"];
 
 function get_attrib_table($attribs) {
 	$numCol = 2;
-	$ret = "<table border='1'>
+	$ret = "<table>
+			<thead>
 			<tr>
 			<th>Key</th>
 			<th>Value</th>
-			</tr>
+			</tr></thead><tbody>
 			"; 
 	
 	$isEven = False;
@@ -28,7 +29,7 @@ function get_attrib_table($attribs) {
 		
 		$isEven = !$isEven;
 	}
-	$ret = $ret . "</table>";
+	$ret = $ret . "</tbody></table>";
 
 	return $ret;
 }
@@ -36,11 +37,12 @@ function get_attrib_table($attribs) {
 function get_relation_table($relations, $ourName, $ourType) {
 	global $type_map;
 	$numCol = 2;
-	$ret = "<table border='1'>
+	$ret = "<table>
+			<thead>
 			<tr>
 			<th>Relation</th>
 			<th>Entry</th>
-			</tr>
+			</tr></thead><tbody>
 			";
 
 	$isEven = False;
@@ -71,7 +73,7 @@ function get_relation_table($relations, $ourName, $ourType) {
 		$ret = $ret . "</tr>
 				";
 	}
-	$ret = $ret . "</table>";
+	$ret = $ret . "</tbody></table>";
 	
 	return $ret;
 }
