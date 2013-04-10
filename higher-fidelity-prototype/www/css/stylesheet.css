@@ -70,6 +70,11 @@
 	width:30px;
 }
 
+#entrytable img {
+	width:20px;
+	height:20px;
+}
+
 table {
 	border:0px;
 }

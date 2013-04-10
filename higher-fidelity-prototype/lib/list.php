@@ -29,7 +29,7 @@ function get_entries_table($type) {
 		}
 		$name = $entry['name'];
 		$ret = $ret . "<td>" . $name . "</td>";
-		$ret = $ret . "<td><button type=\"button\" onclick=\"location.href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . '\'">Details</button></td>';
+		$ret = $ret . "<td><a href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . '\'"><img src="./img/viewdetails.png"></a></td>';
 		$ret = $ret . "</tr>
 				";
 		$isEven = !$isEven;
