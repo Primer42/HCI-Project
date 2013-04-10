@@ -59,43 +59,6 @@
 
 \begin_body
 
-\begin_layout Standard
-Our previous website was not a full implementation since it is intented
- to serve as a medium-fidelity prototype.
- Exclusion of database and server functionality for the system resulted
- in a sytem that restricts users in various ways.
- Some of the these limitations were:
-\end_layout
-
-\begin_layout Itemize
-Permision to 2 insertion for each type of object
-\end_layout
-
-\begin_layout Itemize
-Mimicked edition functionality
-\end_layout
-
-\begin_layout Standard
-In this assigment we addressed these shortcomings of the system by usage
- of a database and server.
- We are using SQLite as database and Apache as server to interpret PHP code
- of the website..
- Unlike in previous assignment our web pages have dynamic content (HTML)
- as opposed to static content (PHP).
-\end_layout
-
-\begin_layout Standard
-Some of the subjects had complained about appearance of the web site in
- our medium-prototype usability testing.
- As a result of these complaints, we particularly tried to improve eyecandy
- of the our website.
- We related each entity and fields of the entities with some good looking
- icons.
- We believe this will make users ability to reach to a specific object or
- field easier and faster and help users to learn the layout of the system
- faster since humans memorize visual data better than textual data.
-\end_layout
-
 \begin_layout Section
 Prototype Video
 \end_layout
@@ -110,7 +73,7 @@ status open
 
 \begin_layout Plain Layout
 
-LINK HERE
+http://youtu.be/U63NwWMVzy4
 \end_layout
 
 \end_inset
@@ -122,16 +85,159 @@ LINK HERE
 New Design
 \end_layout
 
+\begin_layout Standard
+Our new design is now fully interactive, more color, and many more icons.
+ The first and largest improvement is that this prototype is interactive
+ - users are able to add and view any entry.
+ We have achieved this using HTML, CSS and PHP, with an Apache Web Server
+ and SQLite Database.
+ Sadly, we did not have time to make this interactivity complete - users
+ are currently not able to delete entries, nor are they able to add attributes
+ or relations to an entry after it has been created.
+ We hope to add these features to the prototype before testing begins.
+\end_layout
+
+\begin_layout Standard
+Another large change is the addition of colors, and clearer layout, and
+ icons.
+ We have icons for each of the navigation buttons, as well as the “Add Entry”
+ and “View Details” buttons.
+ Furthermore, we have added background coloring to differentiate the various
+ sections of the page (menu bars, content, etc), as well as alternating
+ the color of each row of our information tables, which greatly improves
+ the user’s ability to match the buttons on the right to the content they
+ wish to view.
+\end_layout
+
 \begin_layout Section
 Changes from the Old Design
+\end_layout
+
+\begin_layout Standard
+Most of our changes from the old design have already been discussed - we
+ received a lot of feedback and the ugliness of our interface, as well as
+ the problems imposed by not having a fully interactive website.
+ Also, the addition of icons will hopefully make the purpose and location
+ of all of our buttons clearer.
+\end_layout
+
+\begin_layout Standard
+A more subtle change is the amount of information we present on each page.
+ In the previous prototype, all of the information about each entry was
+ presented on the main list page - this mean there was no reason to view
+ the details for any entry.
+ We have changed this, now only showing the entry’s name on the list page,
+ and displaying much more information on its details page.
 \end_layout
 
 \begin_layout Section
 Expected performance
 \end_layout
 
+\begin_layout Standard
+We hope that the improved appearance of the program will not affect the
+ users’ opinion so dramatically, while also improving their experience.
+ Larger icons are both easier to visually find, while also easier to click
+ with the mouse.
+ Also, we hope that the visual association will help the users achieve their
+ tasks more quickly, since people process and memorize visual data more
+ rapidly than textual data.
+\end_layout
+
+\begin_layout Standard
+The addition of icons comes with a cost - it reduces amount of information
+ that appears on each page.
+ Experienced users of our website might not enjoy these changes, as their
+ focus may be processing as much content as possible rather than an easy
+ to understand user interface.
+\end_layout
+
+\begin_layout Standard
+We also expect that adding new relations will cause problems.
+ To add a relation, you need to specify the target objects that are to be
+ related.
+ Right now, that is done by selected the target’s type (company, job, note
+ or person) and then typing the target’s name.
+ If the name is not typed in correctly, the relation is not added, and silently
+ fails.
+ Ideally, we would like to let the user select the target from a list of
+ entries of the correct type, but we did not have time to implement a feature
+ this complicated.
+\end_layout
+
+\begin_layout Standard
+Finally, the add page in generally is currently a bit confusing.
+ When you submit your responses, it remains on the same page.
+ We have not figured out how to fix this yet, but we hope to have this bug
+ ironed out before our next round of usability testing.
+\end_layout
+
 \begin_layout Section
 User Suggestions that were Rejected
+\end_layout
+
+\begin_layout Standard
+One tester suggested that we include a “date added” field for each entry.
+ He wanted this field to help him distinguish between different entries.
+ We rejected this suggestion for now.
+ Adding it to our current layout would make our design visually busy, especially
+ since to make it useful, it would have to be on the list page of each entry
+ type.
+ Also, we decided that it was not likely to make much difference in most
+ cases.
+ 
+\end_layout
+
+\begin_layout Standard
+A user also suggested a totally different users interface, with 3 panes,
+ as mentioned at the end of the previous report.
+ Though this ideas has some merits, it would have required a complete overhaul
+ not only of the highest level design, but down to the semantic and syntactic
+ level of the design.
+ Though there may be some advantages to her suggestion, we did not have
+ the ability to make such far reaching changes at this time.
+\end_layout
+
+\begin_layout Section
+Usage
+\end_layout
+
+\begin_layout Standard
+Sadly, we are not able to host this website remotely, so if you would like
+ to use the demo, you will have to host it on your local machine.
+ Here is an easy way to do that hosting.
+\end_layout
+
+\begin_layout Enumerate
+Download and install XAMPP for your computer from http://www.apachefriends.org/en/
+xampp.html
+\end_layout
+
+\begin_layout Enumerate
+XAMPP should have created a directory somewhere called 'xampp/htdocs' which
+ is the hosted directory.
+ It will be at a different location depending on your OS.
+ Find it.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Add our code to a subdirectory of xampp/htdocs, either by copying the code
+ or cloning it from github to that directory.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Start apache using the xampp control panel.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Open start.php from the xampp/htdocs/<directory you added>/www/
+\end_layout
+
+\begin_layout Enumerate
+You should now have a working demo!
 \end_layout
 
 \end_body
