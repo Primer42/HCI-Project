@@ -98,17 +98,66 @@ function open_db() {
 	}
 	
 	if($add_test_data) {
-		add_entry($database, 'Tufts University', 'company');
-		add_entry($database, 'Foo Inc', 'company');
-		add_attribute($database, 'Tufts University', 'company', 'Address', '419 Boston Ave, Medford MA');
-		add_entry($database, 'Teacher Assistant', 'job');
-		add_attribute($database, 'Teacher Assistant', 'job', 'Description', 'TA for CS Class');
-		add_relation($database, 'Tufts University', 'company', 'Teacher Assistant', 'job', "Jobs's Company");
-		add_entry($database, 'Sent Resume', 'note');
-		add_attribute($database, 'Sent Resume', 'note', 'text', 'Sent my Resume for this position');
-		add_relation($database, 'Sent Resume', 'note', 'Teacher Assistant', 'job', 'Job');
-		add_entry($database, 'John Doe', 'person');
-		add_attribute($database, 'John Doe', 'person', 'Address', '12 Boston Ave Medford MA 02151');
+		//Add Companies
+		$name = 'Tufts University';
+		$type = 'company';
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '419 Boston Ave, Medford MA');
+		add_attribute($database, $name, $type, 'Phone', '617-628-5000');
+		$name = 'Foo Inc';
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '123 Main Street, Cambridge, MA');
+		add_attribute($database, $name, $type, 'Phone', '617-123-4567');
+		$name="Real Company, No Really";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', 'Number Street Name, Town, MA');
+		add_attribute($database, $name, $type, 'Phone', '555-555-5555');
+		$name = "Blah Co";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '5786 Washington Way, Arlington, MA');
+		add_attribute($database, $name, $type, 'Phone', '617-819-4593');
+		//Add jobs
+		$name = "Teacher Assistant";
+		$type = "job";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Description', 'TA for CS Class');
+		add_relation($database, $name, $type, 'Tufts University', 'company', "Company");
+		$name = "Foo Maker";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Description', 'Make Foo all day');
+		add_relation($database, $name, $type, 'Foo Inc', 'company', "Company");
+		$name = "Not a secret agent";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Description', 'Really, just a normal blue collar job');
+		add_relation($database, $name, $type, 'Real Company, No Really', 'company', "Company");				
+		//Add People
+		$name = "John Doe";
+		$type = "person";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '12 Boston Ave Medford MA 02151');
+		add_attribute($database, $name, $type, "Email Address", "johndoe@gmail.com ");
+		$name = "Guvenc Usanmaz";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '147 College Ave. Somerville MA 02166');
+		add_attribute($database, $name, $type, "Email Address", "gusanmaz@hotmail.net");
+		$name = "William Richard";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'Address', '19 Medford Ave. Cambridge MA 02162');
+		add_attribute($database, $name, $type, "Email Address", "wrichard@yahoo.edu");
+		//Add notes
+		$name = "Sent Resume";
+		$type = "note";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'text', 'Sent my Resume for this position');
+		add_relation($database, $name, $type, 'Foo Maker', 'job', 'Job');
+		add_relation($database, $name, $type, 'Foo Inc', 'company', 'Company');
+		$name = "Ask about lecturer position";
+		add_entry($database, $name, $type);
+		add_attribute($database, $name, $type, 'text', 'Ask John if tehy are going to open a position for a lecturer');
+		add_relation($database, $name, $type, "John Doe", 'person', "Person");
+		add_relation($database, $name, $type, "Tufts University", 'company', "Company");
+		
+		
 	}
 	
 	return $database;
