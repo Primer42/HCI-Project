@@ -3,33 +3,58 @@
 /*Header/menubar styling */
 
 
-#header table
-{
-	align:left;
-	width:100%;	
+#header {
+	width: 100%;
+	float:left;
+	margin-bottom:25px;
+	margin-top:10px;
+	background-color:#E0E0E0;
+	padding-bottom:10px;
 }
 
-#header td
-{
-	align:center;
+#header ul{
+	list-style-type:none;
+	padding:0;
+}
+
+#header li { 
+	display:inline;
+	float:left;
+	display:block;
+	width:100px;
+	margin-left:5px;
+	margin-right:5px;
+	background-color:#F5FAFF;
+	border-radius:15px;
 	text-align:center;
+	border-style:solid;
+	border-color:#70B8FF;
+	height:90px;
 }
 
-#header h3
+#header a
 {
-	color:green;
+	font-size:small;
 }
 
-#header h3 img 
+#header img 
 {
-	width:48px;
-	height:48px;
+	width:60px;
+	height:60px;
 }
-#header a img
-{
-	width:64px;
-	height:64px;
-	
+
+#header a:link, a:visited {
+	color:#000000;
+}
+#header a:hover {
+	color:#0033CC;
+}
+
+
+
+#listmenu img {
+	width:18px;
+	height:18px;
 }
 
 
