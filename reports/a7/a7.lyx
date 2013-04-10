@@ -96,5 +96,43 @@ Some of the subjects had complained about appearance of the web site in
  faster since humans memorize visual data better than textual data.
 \end_layout
 
+\begin_layout Section
+Prototype Video
+\end_layout
+
+\begin_layout Standard
+A video of the prototype being used can be found here.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+LINK HERE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+New Design
+\end_layout
+
+\begin_layout Section
+Changes from the Old Design
+\end_layout
+
+\begin_layout Section
+Expected performance
+\end_layout
+
+\begin_layout Section
+User Suggestions that were Rejected
+\end_layout
+
 \end_body
 \end_document
