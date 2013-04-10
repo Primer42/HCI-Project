@@ -12,10 +12,10 @@ function get_entries_table($type) {
 	
 	$numCol = 2;
 	//Write the table header
-	$ret = $ret . "<table border='1'>
+	$ret = $ret . "<div id=entrytable><table border='1'>
 			<tr>
 			<th>Name</th>
-			<th>Buttons</th>
+			<th></th>
 			</tr>
 			";
 
@@ -34,7 +34,7 @@ function get_entries_table($type) {
 				";
 		$isEven = !$isEven;
 	}
-	$ret = $ret . "</table>";
+	$ret = $ret . "</table></div>";
 	
 	$database->close();
 	

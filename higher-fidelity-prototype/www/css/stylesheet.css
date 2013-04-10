@@ -51,13 +51,28 @@
 }
 
 
+#listmenu {
+	margin-top:5px;
+	margin-bottom:5px;
+	width:100%;
+}
 
 #listmenu img {
 	width:18px;
 	height:18px;
 }
 
+#entrytable table {
+	width:100%;
+}
 
+#entrytable td:first-child + td {
+	width:30px;
+}
+
+table {
+	border:0px;
+}
 
 /* To alternate list row attributes */
 .even{background-color:white;}
