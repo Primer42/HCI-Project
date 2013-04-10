@@ -48,7 +48,8 @@ function get_entries_table($type) {
 function get_list_page($computerType, $humanType) {
 	return "<div id=listmenu>" .
 			"<a href='add.php?" . http_build_query(array('cType' => $computerType, 'hType' => $humanType)) . "'> " .
-			'<img src="./img/plus_64.png"> Add ' . $humanType . "</a></div>"
+			'<img src="./img/plus_64.png"> Add ' . $humanType . "</a></div>
+					"
 	. get_entries_table($computerType);
 			
 
