@@ -1,7 +1,4 @@
 <?php 
-include_once __DIR__ . '/../lib/header.php';
-include_once __DIR__ . '/../lib/footer.php';
-
 
 $pageTitle = "Welcome!";
 
