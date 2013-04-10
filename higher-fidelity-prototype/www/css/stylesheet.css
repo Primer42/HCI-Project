@@ -43,10 +43,10 @@
 	height:60px;
 }
 
-#header a:link, a:visited {
+a:link, a:visited {
 	color:#000000;
 }
-#header a:hover {
+a:hover {
 	color:#0033CC;
 }
 
