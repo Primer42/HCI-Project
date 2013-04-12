@@ -55,4 +55,79 @@ function get_list_page($computerType, $humanType) {
 
 }
 
+
+
+function get_attrib_table($attribs) {
+	$numCol = 2;
+	$ret = "<table>
+			<thead>
+			<tr>
+			<th>Key</th>
+			<th>Value</th>
+			</tr></thead><tbody>
+			";
+
+	$isEven = False;
+
+	while($attrib = $attribs->fetchArray()) {
+		if($isEven) {
+			$ret = $ret . '<tr class="even">';
+		} else {
+			$ret = $ret . '<tr class="odd">';
+		}
+
+		$ret = $ret . "<td>" . $attrib['key'] . "</td><td>" . $attrib['value'] . "</td></tr>";
+
+		$isEven = !$isEven;
+	}
+	$ret = $ret . "</tbody></table>";
+
+	return $ret;
+}
+
+function get_relation_table($relations, $ourName, $ourType) {
+	global $type_map;
+	$numCol = 2;
+	$ret = "<table>
+			<thead>
+			<tr>
+			<th>Relation</th>
+			<th>Entry</th>
+			</tr></thead><tbody>
+			";
+
+	$isEven = False;
+
+	while($relation = $relations->fetchArray()) {
+		if($isEven) {
+			$ret = $ret . '<tr class="even">
+					';
+		} else {
+			$ret = $ret . '<tr class="odd">
+					';
+		}
+
+		$ret = $ret . "<td>" . $relation['name'] . "</td>
+				";
+		$entryName = '';
+		$entryType = '';
+		if($relation['e1name'] == $ourName and $relation['e1type'] == $type_map[$ourType]) {
+			$entryName = $relation['e2name'];
+			$entryType = array_search($relation['e2type'], $type_map);
+		} else {
+			$entryName = $relation['e1name'];
+			$entryType = array_search($relation['e1type'], $type_map);
+		}
+		$ret = $ret . "<td><a href='details.php?" . http_build_query(array('name'=>$entryName, 'type'=>$entryType)) . "'>$entryName</a></td>
+		";
+		$isEven = !$isEven;
+		$ret = $ret . "</tr>
+				";
+	}
+	$ret = $ret . "</tbody></table>";
+
+	return $ret;
+}
+
+
 ?>
