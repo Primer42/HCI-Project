@@ -25,6 +25,16 @@ function add_entry($database, $name, $type) {
 	exec_query($database, $query);
 }
 
+function delete_entry($database, $name, $type) {
+	global $type_map;
+	$name = '"' . SQLite3::escapeString($name) . '"';
+	$mappedType = $type_map[$type];
+	exec_query($database, "DELETE FROM Entries WHERE name=".$name." AND type=" . $mappedType);
+	exec_query($database, "DELETE FROM Attributes WHERE entryName=" . $name . " AND entryType=" . $mappedType);
+	exec_query($database, "DELETE FROM Relations WHERE e1name=" . $name . " AND e1type=". $mappedType);
+	exec_query($database, "DELETE FROM Relations WHERE e2name=" . $name . " AND e2type=" . $mappedType);
+}
+
 function get_entry($database, $name, $type) {
 	global $type_map;
 	//$query = join(' ', ["SELECT * FROM Entries WHERE name=", quote_and_escape_text($name), "AND type=", $type_map[$type]]);

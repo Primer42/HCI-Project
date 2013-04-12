@@ -84,7 +84,7 @@ a:hover {
 }
 
 #entrytable td:first-child + td {
-	width:30px;
+	width:60px;
 }
 
 #entrytable img {

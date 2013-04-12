@@ -26,13 +26,20 @@ function get_entries_table($type) {
 	
 	while($entry = $entries->fetchArray()) {
 		if($isEven){
-			$ret = $ret . '<tr class="even">';
+			$ret = $ret . '<tr class="even">
+					';
 		} else {
-			$ret = $ret . '<tr class="odd">';
+			$ret = $ret . '<tr class="odd">
+				';
 		}
 		$name = $entry['name'];
-		$ret = $ret . "<td>" . $name . "</td>";
-		$ret = $ret . "<td><a href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/viewdetails.png'></a></td>";
+		$ret = $ret . "<td>" . $name . "</td>
+				";
+		$ret = $ret . "<td>
+					<a href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/viewdetails.png'></a>
+					<a href='confirm_delete.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/x.png'></a>
+				</td>
+			";
 		$ret = $ret . "</tr>
 				";
 		$isEven = !$isEven;
