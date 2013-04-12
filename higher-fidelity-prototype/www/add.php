@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . '/../database/database.php';
+include_once __DIR__ . '/../lib/util.php';
 
 function get_type_selection_dropdown($fieldName) {
 	return <<<TYPESELECT
@@ -14,9 +15,6 @@ function get_type_selection_dropdown($fieldName) {
 TYPESELECT;
 }
 
-function post_set($fieldName) {
-	return isset($_POST[$fieldName]) and !empty($_POST[$fieldName]);
-}
 
 function handle_attribute($database, $num, $entryName, $entryType) {
 	$keyName = 'k' . $num;
@@ -49,6 +47,7 @@ if(isset($_POST['name'])) {
 		handle_relation($database, $i, $entryName, $computerType);
 	}
 	$database->close();
+	header('Location: ./' . $computerType . '.php');
 }
 
 
