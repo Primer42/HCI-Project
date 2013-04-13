@@ -36,8 +36,8 @@ function get_entries_table($type) {
 		$ret = $ret . "<td>" . $name . "</td>
 				";
 		$ret = $ret . "<td>
-					<a href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/viewdetails.png'></a>
-					<a href='confirm_delete.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/x.png'></a>
+					<a href='details.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/viewdetails.png' title = 'View Details'></a>
+					<a href='confirm_delete.php?" . http_build_query(array('name'=>$name, 'type'=>$type)) . "'><img src='./img/x.png' title = 'Delete'></a>
 				</td>
 			";
 		$ret = $ret . "</tr>
