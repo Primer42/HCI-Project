@@ -111,13 +111,157 @@ How easily have you adapted using the system?
 Will's New Questions
 \end_layout
 
+\begin_layout Standard
+In general, we should consider converting multiple point questions to the
+ Likert scale, to provide more consistant answers.
+\end_layout
+
 \begin_layout Enumerate
 How many times did the system do something that surprised you, or that you
  didn't expect?
 \end_layout
 
 \begin_layout Enumerate
+I clearly understood the indended purpose of the system, and how to achieve
+ those goals.
+\begin_inset Newline newline
+\end_inset
 
+Strongly disagree - 1 2 3 4 5 - Strongly Agree
+\end_layout
+
+\begin_layout Enumerate
+I never experienced a time while using the system where I was unsure of
+ what action to take next.
+\begin_inset Newline newline
+\end_inset
+
+Strongly disagree - 1 2 3 4 5 - Strongly Agree
+\end_layout
+
+\begin_layout Enumerate
+Overally reactions to the software.
+ 
+\begin_inset Newline newline
+\end_inset
+
+terrible - 1 2 3 4 5 - wonderful 
+\begin_inset Newline newline
+\end_inset
+
+difficult - 1 2 3 4 5 -easy 
+\begin_inset Newline newline
+\end_inset
+
+frustrating - 1 2 3 4 5 - satisfying 
+\begin_inset Newline newline
+\end_inset
+
+inadequate power - 1 2 3 4 5 -adequate power 
+\begin_inset Newline newline
+\end_inset
+
+dull - 1 2 3 4 5 -stimulating 
+\begin_inset Newline newline
+\end_inset
+
+rigid - 1 2 3 4 5 -flexible 
+\end_layout
+
+\begin_layout Enumerate
+Organization of information 
+\begin_inset Newline newline
+\end_inset
+
+confusing - 1 2 3 4 5 -very clear
+\end_layout
+
+\begin_layout Enumerate
+Sequence of screens 
+\begin_inset Newline newline
+\end_inset
+
+confusing - 1 2 3 4 5 - very clear
+\end_layout
+
+\begin_layout Enumerate
+Position of messages on screen 
+\begin_inset Newline newline
+\end_inset
+
+inconsistent - 1 2 3 4 5 - consistent 
+\end_layout
+
+\begin_layout Enumerate
+Prompts for input 
+\begin_inset Newline newline
+\end_inset
+
+confusing - 1 2 3 4 5 - clear 
+\end_layout
+
+\begin_layout Enumerate
+Computer informs about its progress 
+\begin_inset Newline newline
+\end_inset
+
+never - 1 2 3 4 5 - always 
+\end_layout
+
+\begin_layout Enumerate
+Error messages 
+\begin_inset Newline newline
+\end_inset
+
+unhelpful - 1 2 3 4 5 - helpful
+\end_layout
+
+\begin_layout Enumerate
+Learning to operate the system 
+\begin_inset Newline newline
+\end_inset
+
+difficult - 1 2 3 4 5 - easy 
+\end_layout
+
+\begin_layout Enumerate
+Exploring new features by trial and error 
+\begin_inset Newline newline
+\end_inset
+
+difficult - 1 2 3 4 5 - easy 
+\end_layout
+
+\begin_layout Enumerate
+Remembering names and use of commands 
+\begin_inset Newline newline
+\end_inset
+
+difficult - 1 2 3 4 5 - easy 
+\end_layout
+
+\begin_layout Enumerate
+Performing tasks is straightforward 
+\begin_inset Newline newline
+\end_inset
+
+never - 1 2 3 4 5 - always 
+\end_layout
+
+\begin_layout Enumerate
+Help messages on the screen 
+\begin_inset Newline newline
+\end_inset
+
+unhelpful - 1 2 3 4 5 - helpful 
+\end_layout
+
+\begin_layout Enumerate
+Supplemental reference materials 
+\begin_inset Newline newline
+\end_inset
+
+confusing - 1 2 3 4 5 - clear
 \end_layout
 
 \end_body
