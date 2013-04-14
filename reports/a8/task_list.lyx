@@ -201,5 +201,15 @@ George: Bye.
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+You are no longer interested in the Foo Make position, which was already
+ in the system.
+ Delete it.
+\end_layout
+
+\begin_layout Enumerate
+Examine the details of Tufts University.
+\end_layout
+
 \end_body
 \end_document
