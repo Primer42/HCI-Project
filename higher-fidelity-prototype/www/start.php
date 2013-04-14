@@ -13,6 +13,9 @@ The key feature that allows all of this to work smoothly is the ability to refer
 <p>
 This is merely a demo, mostly to display our user interface layout and is not fully functional.  There are several features that are not present that will be present in the final program.
 <p>
+<p>
+Most notably, you cannot edit an entry once it has been added at this time.
+<p>
 Click any of the navigation links above to get started.
 <p>
 ";
