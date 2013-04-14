@@ -1,0 +1,194 @@
+%% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[pdftex]{eforms}
+\usepackage{fullpage}
+
+\newcommand{\textBox}[1]{
+\textField[\Ff\FfMultiline]{#1}{\linewidth}{48bp}
+}
+
+\newcommand{\textLine}[1]{
+\textField[]{#1}{\linewidth}{12bp}
+}
+
+\newcommand{\myRadio}[2]{
+\radioButton{#1}{10bp}{10bp}{#2}
+}
+
+\newcommand{\rankChoice}[3]{
+#2 -
+1 \myRadio{#1}{1}
+2 \myRadio{#1}{2}
+3 \myRadio{#1}{3}
+4 \myRadio{#1}{4}
+5 \myRadio{#1}{5}
+- #3
+}
+
+\newcommand{\likertScale}[1]{
+Strongly Disagree \myRadio{#1}{StronglyDisagree}
+Disagree \myRadio{#1}{Disagree}
+Neutral \myRadio{#1}{Neutral}
+Agree \myRadio{#1}{Agree}
+Strongly Agree \myRadio{#1}{StronglyAgree}
+}
+
+\setlength{\parindent}{0cm}
+
+
+\begin{document}
+
+\section{Multiple Choice}
+
+\begin{enumerate}
+\item Overall reactions to the software. 
+
+\rankChoice{overall wonderful}{Terrible}{Wonderful}
+
+\rankChoice{overall difficult easy}{Difficult}{Easy}
+
+\rankChoice{overall frustrating satisfying}{Frustrating}{Satisfying}
+
+\rankChoice{overall inadequate adequate power}{Inadequate Power}{Adequate power}
+
+\rankChoice{overall dull stimulating}{Dull}{Stimulating}
+
+\rankChoice{overall rigid flexible}{Rigid}{Flexible}
+
+\item The system was easy to use.
+
+\likertScale{easy to use}
+
+\item I liked the general look and feel of the system.
+
+\likertScale{look and feel}
+
+\item I enjoyed using the system?
+
+\likertScale{enjoy to use}
+
+\item I clearly understood the intended purpose of the system, and how to achieve those goals.
+
+\likertScale{indended purpose}
+
+\item I never experienced a time while using the system where I was unsure of what action to take next.
+
+\likertScale{next action unsure}
+
+\item The information presented was organized in a clear way.
+
+\likertScale{information presented}
+
+\item The sequence of screens presented to complete tasks were clear.
+
+\likertScale{Sequence of Screens}
+
+\item The position of messages on the screen was consistent.
+
+\likertScale{Message position}
+
+\item The input prompts were clear.
+\likertScale{clear prompts}
+
+\item The computer always informed you about its progress.
+
+\likertScale{computer progress}
+
+\item Error messages were helpful. 
+
+\likertScale{error messages}
+
+\item Learning to operate the system was easy.
+
+\likertScale{learning to operate}
+
+\item Exploring new features by trial and error was easy. 
+
+\likertScale{explore by trial and error}
+
+\item Remembering names and use of commands was easy.
+
+\likertScale{remembering commands}
+
+\item Performing tasks was always straightforward. 
+
+\likertScale{performing tasks}
+
+\item Help messages on the screen were helpful.
+
+\likertScale{help messages}
+
+\item Supplemental reference materials were clear.
+
+\likertScale{reference materials}
+
+\item I easily adapted to using the system.
+
+\likertScale{easily adapted}
+
+\end{enumerate}
+
+\section{Open Ended Questions}
+
+\begin{enumerate}
+
+\item How many times did the system do something that surprised you, or that you didn't expect?
+
+\textLine{system surprising}
+
+\item Can you remember those times, if any existed?
+
+\textBox{remember surprises}
+
+\item Which tasks were easy to complete?
+
+\textBox{Which tasks were easy to complete?}
+
+\item Can you identify why the solutions were clear?
+
+\textBox{Can you identify why the solutions were clear?}
+
+\item Which tasks were difficult to complete?
+
+\textBox{Which tasks were difficult to complete?}
+
+\item How would you make those tasks easier to complete?
+
+\textBox{How would you make those tasks easier to complete?}
+
+\item Were there any instructions, vocabulary or labels that you found confusing?
+
+\textBox{Were there any instructions, vocabulary or labels that you found confusing?}
+
+\item Any general complaints or suggestions?
+
+ \textBox{Any general complaints or suggestions?}
+
+\end{enumerate}
+
+\section{About You}
+
+What is your highest level of education?
+
+\textLine{education}
+
+If you went to college, what was your major?
+
+\textLine{major}
+
+How comfortable do you feel while using a computer?
+
+\rankChoice{computer literacy}{Uncomfortable}{Comfortable}
+
+\hfill
+
+Have you used a system that serves a similar purpose as this one before?
+
+\textLine{similar systems}
+
+How old are you? If you are uncomfortable answering exactly, feel free to round to a nearby age.
+
+\textLine{age}
+
+\end{document}
