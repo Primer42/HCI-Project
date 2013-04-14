@@ -103,9 +103,7 @@ Your resume looks great.
 \begin_inset Newline newline
 \end_inset
 
-Along with your schedule, please indicate which office you would like to
- work at (Oklahoma City, OK, or New Orleans, LA) and please attach a cover
- letter.
+Along with your schedule, please attach a cover letter.
 \begin_inset Newline newline
 \end_inset
 
@@ -123,14 +121,85 @@ You scheduled your phone interview for Tuseday at 1:00 pm with George.
 
 \begin_layout Enumerate
 You just had your phone interview with George.
- A transcript appears below.
+ A partial transcript, without the boring parts, appears below.
  Record any relevant information.
-\begin_inset Newline newline
-\end_inset
-
-I'll write this tomorrow.
- This is probably going to be the last task in the list.
 \end_layout
 
+\begin_deeper
+\begin_layout Description
+You: Hello
+\end_layout
+
+\begin_layout Description
+George: Hello.
+ This is George from Cyber Coders.
+ How are you?
+\end_layout
+
+\begin_layout Description
+You: Fine.
+ You?
+\end_layout
+
+\begin_layout Description
+George: Great.
+ Can I start by asking a bit about your background?
+\end_layout
+
+\begin_layout Description
+- questions about your background here
+\end_layout
+
+\begin_layout Description
+George: Next, can we go through some technical questions?
+\end_layout
+
+\begin_layout Description
+- technical questions here.
+\end_layout
+
+\begin_layout Description
+George: Finally, do you have any questions for us?
+\end_layout
+
+\begin_layout Description
+You: Yes - can you tell me a bit about the differences between the two offices?
+\end_layout
+
+\begin_layout Description
+- George lists some differences
+\end_layout
+
+\begin_layout Description
+George: Do you have any idea which office you might prefer?
+\end_layout
+
+\begin_layout Description
+You: Right now, I'm leaning towards New Orleans.
+\end_layout
+
+\begin_layout Description
+George: Great.
+ Any more questions?
+\end_layout
+
+\begin_layout Description
+You: Nope - it was nice speaking with you
+\end_layout
+
+\begin_layout Description
+George: You as well.
+ You'll hear back from us in the next few days.
+\end_layout
+
+\begin_layout Description
+You: Goodbye.
+\end_layout
+
+\begin_layout Description
+George: Bye.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
