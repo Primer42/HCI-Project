@@ -475,7 +475,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_2.png
-	scale 22
+	width 25page%
 
 \end_inset
 
@@ -492,6 +492,13 @@ Response for
 
 The system was easy to use.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:system_easy"
+
 \end_inset
 
 
@@ -526,7 +533,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_3.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -540,6 +547,13 @@ Response for
 
 I liked the general look and feel of the system.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:look_and_feel"
+
 \end_inset
 
 
@@ -569,10 +583,6 @@ width "100col%"
 status open
 
 \begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -589,7 +599,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_4.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -606,6 +616,13 @@ Response for
 
 I enjoyed using the system.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:enjoyed_using"
+
 \end_inset
 
 
@@ -640,7 +657,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_5.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -655,6 +672,13 @@ Response for
 I clearly understood the intended purpose of the system, and how to achieve
  those goals.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:understood_purpose"
+
 \end_inset
 
 
@@ -700,7 +724,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_6.png
-	scale 30
+	scale 25
 
 \end_inset
 
@@ -718,6 +742,13 @@ Response for
 I never experienced a time while using the system where I was unsure of
  what action to take next.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unsure_action"
+
 \end_inset
 
 
@@ -769,6 +800,13 @@ The information presented was organized in a clear way.
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:information_clear"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -811,7 +849,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_13.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -828,6 +866,13 @@ Response for
 
 Learning to operate the system was easy
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:leaning_operate"
+
 \end_inset
 
 
@@ -862,7 +907,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_14.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -876,6 +921,13 @@ Response for
 
 Exploring new features by trial and error was easy.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:trail_and_error"
+
 \end_inset
 
  
@@ -921,7 +973,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_16.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -938,6 +990,13 @@ Response for
 
 Performing tasks was always straightforward.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:straightforward"
+
 \end_inset
 
 
@@ -972,7 +1031,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_19.png
-	scale 30
+	width 25page%
 
 \end_inset
 
@@ -986,6 +1045,13 @@ Response for
 
 I easily adapted to using the system.
 \begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:adapted_to_using"
+
 \end_inset
 
 
