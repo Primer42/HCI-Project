@@ -107,15 +107,21 @@ Experimental Setup
 \end_layout
 
 \begin_layout Standard
-The experiment took place in a room at a house between 14.00 and 16.30.
- The room was quite with sufficient light.
- All subjects were tested on a 13.3 (?) inch screen Windows 7 laptop.
- Laptop was placed over an empty round table.
- Our website was accessed using Google Chrome.
- We ( group members) sat between the subject to observe the subject.
+The experiment took place in almost empty living room at the home of most
+ of the users.
+ We kept the room quiet, with few visual distractions, and sufficient light.
+ All subjects were tested on the same 13.3 inch screen Windows 7 laptop with
+ an external mouse - the users were able to use the laptop's trackpad if
+ they chose, but all used the USB mouse.
+ We sat on either side of the subject, in order to observe their actions
+ and discuss their thoughts with them.
  We asked our subjects to verbalize their thoughts by speaking.
- Briefly, computer enviroment was exactly same for any subject.
- 
+ We presented the users with two windows - half the screen had the list
+ of tasks that they were to perform, while the other half of the screen
+ had our website loaded in Google Chrome.
+ This presentation was exactly duplicated for all of the users.
+ Finally, we made sure that the website started on the same page, with the
+ database in the same state, for all subjects.
 \end_layout
 
 \begin_layout Section
