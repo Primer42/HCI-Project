@@ -456,7 +456,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -486,7 +486,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for the system was easy to use
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+The system was easy to use.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -512,7 +520,7 @@ width "45col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -526,7 +534,15 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for I liked the general look and feel of the system
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+I liked the general look and feel of the system.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -550,7 +566,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -584,7 +600,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for the system was easy to use
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+I enjoyed using the system.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -624,8 +648,16 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for I clearly understood the intended purpose of the system and
- how to achieve these gaols
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+I clearly understood the intended purpose of the system, and how to achieve
+ those goals.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -649,7 +681,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -683,7 +715,16 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for unsure of what action to take next
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+I never experienced a time while using the system where I was unsure of
+ what action to take next.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -723,7 +764,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for information is clearly organized
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+The information presented was organized in a clear way.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -747,7 +796,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -781,7 +830,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for learning to operate the system was easy
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+Learning to operate the system was easy
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -821,7 +878,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for trial and error exploration was easy 
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+Exploring new features by trial and error was easy.
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -845,7 +910,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -879,7 +944,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for performing tasks were straightforward
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+Performing tasks was always straightforward.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -919,7 +992,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response for easy adaptation to usage
+Response for 
+\begin_inset Quotes eld
+\end_inset
+
+I easily adapted to using the system.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_inset
