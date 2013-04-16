@@ -445,19 +445,17 @@ Results
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_2.png
-	width 25text%
+	width 25page%
 
 \end_inset
 
