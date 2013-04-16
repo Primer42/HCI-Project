@@ -67,41 +67,6 @@ Second Evaluation and Analysis: Job Tracking
 William Richard and Guvenc Usanmaz
 \end_layout
 
-\begin_layout Standard
-We found that, we need to change vocabulary of our website.
- Pair of key attribute fields for objects found were found confusing by
- people who are not familiar with database concept.
- It was also difficult to populate these fields appropriately for most subjects.
- Giving less flexibility to user by making attributes predefined would would
- probably make our website easier to learn and use.
-\end_layout
-
-\begin_layout Standard
-We also found that, instructions at start page was mostly skimmed or not
- read at all at the beginning.
- One subject said she wouldn't spend time on start page even we put a video
- to explain the website.
- On the other hand some subjects visited start page after they had experienced
- problems about using the system.
- This finding is an important lesson for us.
- We should try to design the website as simple and intuitive as possible
- so that users could succeed without help of instructions.
-\end_layout
-
-\begin_layout Standard
-Same layout for add page of each object was also confusing for our subjects.
- Occasionally subjects had forgotten which object they are adding while
- they are populating fields.
- Highlighting regarding object icon on navigation bar would be a better
- design for preventing this confusion.
- Switching from key-attribute pair fields to object specific predetermined
- attributes for our website would mostly prevent this confusion.
- Subjects also clicked to start page to perform some object specific jobs
- particularly at the beginning of their experience.
- We found out that our start page icon needs relocation and resizing on
- our web page.
-\end_layout
-
 \begin_layout Section
 Experimental Setup 
 \end_layout
@@ -451,6 +416,161 @@ Results
 \end_layout
 
 \begin_layout Standard
+Our system is currently presented in a much more technical manner than the
+ average user is able to comprehend.
+ In figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:system_easy"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:understood_purpose"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:leaning_operate"
+
+\end_inset
+
+, the positive reviews were from our subjects that had computer science
+ training.
+ They all commented that the only reason they understood the system is that
+ we were using technical jargon that they understood.
+ To future support this conclusion, the non-computer science trained subjects
+ noted that they did not understand much of the volcabulary that we were
+ using.
+ The best example of this misunderstand was the use of 
+\begin_inset Quotes eld
+\end_inset
+
+key
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+value
+\begin_inset Quotes erd
+\end_inset
+
+ to store attributes.
+ Not only was this language confusing to the lay person, but were difficult
+ for the trained subjects to understand as well.
+ They understood what 'keys' and 'values' were, but did not know how to
+ best populate those fields.
+ This can be seen in the responses in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unsure_action"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:straightforward"
+
+\end_inset
+
+ - almost every test subject was not sure how to proceed at least once during
+ testing, and many users had this problem several times.
+ Along the same line, almost all users felt that the way to achieve their
+ goals was neither clear nor straightfoward.
+ This frustrationg can been seen in the responses to figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:enjoyed_using"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To our credit, our system was very flexible, and did not punish mistakes,
+ as you can see from the repsonses to figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:trail_and_error"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:adapted_to_using"
+
+\end_inset
+
+.
+ Almost all of our users, even if they had trouble initially, felt that
+ our system allowed them to explore, and discover solutions that worked
+ for them.
+ Even with this being the case, not a single user ended up using the system
+ in the intended way.
+ Also, on a positive note, the esthetics of the system have been geratly
+ improved, as you can see in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:look_and_feel"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:information_clear"
+
+\end_inset
+
+.
+ One user mentioned that the system could be 
+\begin_inset Quotes eld
+\end_inset
+
+more beautiful
+\begin_inset Quotes erd
+\end_inset
+
+, but he also mentioned that it had come a long way from our previous prototype.
+ To be fair, the testers may not have mentioned superficial features beacuse
+ the functionality was so badly presented.
+\end_layout
+
+\begin_layout Standard
+To address these issues, we need to make some major changes both to the
+ intended workflow, as well as the page that the user uses to add new entries.
+ The intended worflow is currently very ridgid in some ways (you need to
+ add a company before you can add a job at that company) and almost flexible
+ to a fault, as one user put it, in other ways (the attributes a user can
+ define about each entry are completely flexible, which makes it difficult
+ for a user to know what to store).
+ Along these lines, the current 
+\begin_inset Quotes eld
+\end_inset
+
+Add Entry
+\begin_inset Quotes erd
+\end_inset
+
+ page is essentially identical for all entry types.
+ This lead to some confusion, when users forgot what type of entry they
+ had chosen to add.
+ We need to change the add pages to make them entry type specific, to both
+ provide more structure to the user, and to make it easier for them to know
+ what type of entry they are adding.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -475,7 +595,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_2.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -533,7 +653,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_3.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -599,7 +719,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_4.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -657,7 +777,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_5.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -724,7 +844,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_6.png
-	scale 25
+	width 100col%
 
 \end_inset
 
@@ -783,7 +903,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_7.png
-	scale 30
+	width 100col%
 
 \end_inset
 
@@ -849,7 +969,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_13.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -907,7 +1027,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_14.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -973,7 +1093,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_16.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -1031,7 +1151,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename charts/chart_19.png
-	width 25page%
+	width 100col%
 
 \end_inset
 
@@ -1074,6 +1194,10 @@ name "fig:adapted_to_using"
 
 \begin_layout Section
 Future Work
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
