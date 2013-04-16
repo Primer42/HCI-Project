@@ -120,8 +120,8 @@ The experiment took place in almost empty living room at the home of most
  of tasks that they were to perform, while the other half of the screen
  had our website loaded in Google Chrome.
  This presentation was exactly duplicated for all of the users.
- Finally, we made sure that the website started on the same page, with the
- database in the same state, for all subjects.
+ Finally, we made sure that the website started on the same page, with datatabes
+ in the same state for all subjects.
 \end_layout
 
 \begin_layout Section
@@ -459,10 +459,6 @@ width "100col%"
 status open
 
 \begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -474,7 +470,7 @@ width "45col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -501,6 +497,10 @@ Response for the system was easy to use
 \end_inset
 
 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -512,7 +512,7 @@ width "45col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -592,6 +592,10 @@ Response for the system was easy to use
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
