@@ -454,41 +454,182 @@ Results
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 0col%
-width "50col%"
+overhang 0in
+width "100col%"
 status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename charts/chart_2.png
-	width 30page%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename charts/chart_6.png
-	scale 40
+	scale 15
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response for the system was easy to use
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-Figure 1: Response for 
-\begin_inset Quotes eld
+\begin_inset Graphics
+	filename charts/chart_3.png
+	scale 25
+
 \end_inset
 
-The system was easy to use.
-\begin_inset Quotes erd
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response for I liked the general look and feel of the system
+\end_layout
+
 \end_inset
 
- Figure 2: Response for I liked the look and feel of the system.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "100col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename charts/chart_4.png
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response for the system was easy to use
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename charts/chart_5.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response for I liked the general look and feel of the system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
