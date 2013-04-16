@@ -684,10 +684,6 @@ width "100col%"
 status open
 
 \begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -799,10 +795,6 @@ width "100col%"
 status open
 
 \begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -913,10 +905,6 @@ width "100col%"
 status open
 
 \begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
