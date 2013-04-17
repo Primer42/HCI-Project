@@ -1197,7 +1197,26 @@ Future Work
 \end_layout
 
 \begin_layout Standard
+First, and most notably, we need to make the changes described in the previous
+ section.
+ This should make the system's function both clearer, and adapt better to
+ user expecations and workflow.
+ These changes include making entry type specific 
+\begin_inset Quotes eld
+\end_inset
 
+Add Entry
+\begin_inset Quotes erd
+\end_inset
+
+ pages, adding the ability to edit entries once they are added, and making
+ the user's current page clearer.
+\end_layout
+
+\begin_layout Standard
+It may also be beneficial to compare our system to a different system with
+ a similar purpose.
+ 
 \end_layout
 
 \end_body
