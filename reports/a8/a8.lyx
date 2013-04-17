@@ -444,7 +444,7 @@ reference "fig:leaning_operate"
  They all commented that the only reason they understood the system is that
  we were using technical jargon that they understood.
  To future support this conclusion, the non-computer science trained subjects
- noted that they did not understand much of the volcabulary that we were
+ noted that they did not understand much of the vocabulary that we were
  using.
  The best example of this misunderstand was the use of 
 \begin_inset Quotes eld
@@ -549,7 +549,7 @@ more beautiful
 \begin_layout Standard
 To address these issues, we need to make some major changes both to the
  intended workflow, as well as the page that the user uses to add new entries.
- The intended worflow is currently very ridgid in some ways (you need to
+ The intended worflow is currently very rigid in some ways (you need to
  add a company before you can add a job at that company) and almost flexible
  to a fault, as one user put it, in other ways (the attributes a user can
  define about each entry are completely flexible, which makes it difficult
