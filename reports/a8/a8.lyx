@@ -76,16 +76,18 @@ The experiment took place in almost empty living room at the home of most
  of the users.
  We kept the room quiet, with few visual distractions, and sufficient light.
  All subjects were tested on the same 13.3 inch screen Windows 7 laptop with
- an external mouse - the users were able to use the laptop's trackpad if
+ an external mouse - the users were able to use the laptop's track pad if
  they chose, but all used the USB mouse.
  We sat on either side of the subject, in order to observe their actions
  and discuss their thoughts with them.
  We asked our subjects to verbalize their thoughts by speaking.
+ We spoke to the subjects as little as possible during the testing, and
+ did not help them if they were struggling with a part of the program.
  We presented the users with two windows - half the screen had the list
  of tasks that they were to perform, while the other half of the screen
  had our website loaded in Google Chrome.
  This presentation was exactly duplicated for all of the users.
- Finally, we made sure that the website started on the same page, with datatabes
+ Finally, we made sure that the website started on the same page, with database
  in the same state for all subjects.
 \end_layout
 
@@ -106,7 +108,7 @@ It is important to us that our system is intuitive to use, especially since
  a question framework that was familiar to our users and hopefully get more
  consistent answers.
  Sadly, we did not know about counter balancing surveys while writing our
- questions, so our attempts for consistency were not verifiability successful.
+ questions, so we cannot verify if our attempts for consistency were successful.
 \end_layout
 
 \begin_layout Section
@@ -136,7 +138,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Higest Level of Education
+Highest Level of Education
 \end_layout
 
 \end_inset
@@ -441,8 +443,8 @@ reference "fig:leaning_operate-1"
 
  the positive reviews were from our subjects that had computer science training.
  They all commented that the only reason they understood the system is that
- we were using technical jargon that they understood.
- To future support this conclusion, the non-computer science trained subjects
+ we were using technical jargon that they were familiar with.
+ To further support this conclusion, the non-computer science trained subjects
  noted that they did not understand much of the vocabulary that we were
  using.
  The best example of this misunderstand was the use of 
@@ -483,8 +485,8 @@ name "fig:straightforward-1-1"
 - almost every test subject was not sure how to proceed at least once during
  testing, and many users had this problem several times.
  Along the same line, almost all users felt that the way to achieve their
- goals was neither clear nor straightfoward.
- This frustrationg can been seen in the responses to figure 
+ goals was neither clear nor straightforward.
+ This frustration can been seen in the responses to figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:enjoyed_using-1"
@@ -496,7 +498,7 @@ reference "fig:enjoyed_using-1"
 
 \begin_layout Standard
 To our credit, our system was very flexible, and did not punish mistakes,
- as you can see from the repsonses to figures 
+ as you can see from the responses to figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:trail_and_error-1"
@@ -516,7 +518,7 @@ reference "fig:adapted_to_using-1"
  for them.
  Even with this being the case, not a single user ended up using the system
  in the intended way.
- Also, on a positive note, the esthetics of the system have been geratly
+ Also, on a positive note, the esthetics of the system have been greatly
  improved, as you can see in figures 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -541,14 +543,14 @@ more beautiful
 \end_inset
 
 , but he also mentioned that it had come a long way from our previous prototype.
- To be fair, the testers may not have mentioned superficial features beacuse
+ To be fair, the testers may not have mentioned superficial features because
  the functionality was so badly presented.
 \end_layout
 
 \begin_layout Standard
 To address these issues, we need to make some major changes both to the
- intended workflow, as well as the page that the user uses to add new entries.
- The intended worflow is currently very rigid in some ways (you need to
+ intended work flow, as well as the page that the user uses to add new entries.
+ The intended overflow is currently very rigid in some ways (you need to
  add a company before you can add a job at that company) and almost flexible
  to a fault, as one user put it, in other ways (the attributes a user can
  define about each entry are completely flexible, which makes it difficult
@@ -570,9 +572,9 @@ Add Entry
 \end_layout
 
 \begin_layout Standard
-Finally, there are a plethera of important graphical improvements that we
+Finally, there are a plethora of important graphical improvements that we
  found that needed to be made.
- Most noteable, and touched upon already a bit, is indicating to the user
+ Most notable, and touched upon already a bit, is indicating to the user
  which page they are on - several users lost track of what page they were
  on, and that made their experience much worse.
  This could easily be achieved by highlighting or bolding the current page's
@@ -587,7 +589,7 @@ Future Work
 First, and most notably, we need to make the changes described in the previous
  section.
  This should make the system's function both clearer, and adapt better to
- user expecations and workflow.
+ user expectations and work flow.
  These changes include making entry type specific 
 \begin_inset Quotes eld
 \end_inset
@@ -597,12 +599,12 @@ Add Entry
 \end_inset
 
  pages, adding the ability to edit entries once they are added, and making
- the user's current page clearer.
+ the user's location clearer.
 \end_layout
 
 \begin_layout Standard
 In the future, we would like to expand our testing, to get more feedback,
- both about the interface and fuctionality of our system.
+ both about the interface and functionality of our system.
  We should start by choosing a wider variety of test subjects, with different
  education, age and computer experience background.
  It would be even better if they were current job seekers, so they could
@@ -610,7 +612,7 @@ In the future, we would like to expand our testing, to get more feedback,
  In a test involving current job seekers, we would likely want to have access
  to the data they were adding and what sorts of entries they were creating.
  This would allow us to better tune the system to common use cases, and
- have it better match the workflow that users expect from it.
+ have it better match the work flow that users expect from it.
  In this case, we would want to check in with users periodically to see
  what problems they've encountered, what features they feel are lacking,
  and which aspects of the site they have found confusing.
@@ -620,9 +622,9 @@ In the future, we would like to expand our testing, to get more feedback,
 Many job seekers use a large spreadsheet to track their job search, and
  our goal is to replace that spreadsheet.
  We could try to query test users about how they have used a job tracking
- spreadsheet in the past, what adantages and disadvantages it provided compared
- to our system.
- We might also exploe how different people organize those spreadsheets,
+ spreadsheet in the past, what advantages and disadvantages it provided
+ compared to our system.
+ We might also explore how different people organize those spreadsheets,
  to provide insight in how to better organize our site.
 \end_layout
 
