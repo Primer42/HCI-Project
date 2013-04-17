@@ -421,26 +421,25 @@ Our system is currently presented in a much more technical manner than the
  In figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:system_easy"
+reference "fig:system_easy-1"
 
 \end_inset
 
 , 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:understood_purpose"
+reference "fig:understood_purpose-1"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:leaning_operate"
+reference "fig:leaning_operate-1"
 
 \end_inset
 
-, the positive reviews were from our subjects that had computer science
- training.
+ the positive reviews were from our subjects that had computer science training.
  They all commented that the only reason they understood the system is that
  we were using technical jargon that they understood.
  To future support this conclusion, the non-computer science trained subjects
@@ -470,25 +469,25 @@ value
  This can be seen in the responses in figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:unsure_action"
+reference "fig:unsure_action-1"
 
 \end_inset
 
  and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:straightforward"
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:straightforward-1-1"
 
 \end_inset
 
- - almost every test subject was not sure how to proceed at least once during
+- almost every test subject was not sure how to proceed at least once during
  testing, and many users had this problem several times.
  Along the same line, almost all users felt that the way to achieve their
  goals was neither clear nor straightfoward.
  This frustrationg can been seen in the responses to figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:enjoyed_using"
+reference "fig:enjoyed_using-1"
 
 \end_inset
 
@@ -500,14 +499,14 @@ To our credit, our system was very flexible, and did not punish mistakes,
  as you can see from the repsonses to figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:trail_and_error"
+reference "fig:trail_and_error-1"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:adapted_to_using"
+reference "fig:adapted_to_using-1"
 
 \end_inset
 
@@ -521,14 +520,14 @@ reference "fig:adapted_to_using"
  improved, as you can see in figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:look_and_feel"
+reference "fig:look_and_feel-1"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:information_clear"
+reference "fig:information_clear-1"
 
 \end_inset
 
@@ -637,7 +636,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -708,7 +707,7 @@ width "45col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -761,7 +760,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -886,7 +885,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -1011,7 +1010,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -1135,7 +1134,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
