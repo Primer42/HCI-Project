@@ -570,6 +570,16 @@ Add Entry
  what type of entry they are adding.
 \end_layout
 
+\begin_layout Standard
+Finally, there are a plethera of important graphical improvements that we
+ found that needed to be made.
+ Most noteable, and touched upon already a bit, is indicating to the user
+ which page they are on - several users lost track of what page they were
+ on, and that made their experience much worse.
+ This could easily be achieved by highlighting or bolding the current page's
+ icon in the navigation bar.
+\end_layout
+
 \begin_layout Section
 Future Work
 \end_layout
@@ -592,24 +602,29 @@ Add Entry
 \end_layout
 
 \begin_layout Standard
-It may also be beneficial to compare our system to a different system with
- a similar purpose.
- 
+In the future, we would like to expand our testing, to get more feedback,
+ both about the interface and fuctionality of our system.
+ We should start by choosing a wider variety of test subjects, with different
+ education, age and computer experience background.
+ It would be even better if they were current job seekers, so they could
+ test the system during their job search.
+ In a test involving current job seekers, we would likely want to have access
+ to the data they were adding and what sorts of entries they were creating.
+ This would allow us to better tune the system to common use cases, and
+ have it better match the workflow that users expect from it.
+ In this case, we would want to check in with users periodically to see
+ what problems they've encountered, what features they feel are lacking,
+ and which aspects of the site they have found confusing.
 \end_layout
 
 \begin_layout Standard
-Highligting icon of current page at navigation bar could also be useful
- for users.
- Our website could be accesed from almost any place and device.
- In future experiments, it would provide more insight to us if we could
- perform several experiments with different enviroment settings.
- Since this application is designed for job seekers for future experiments
- we should try to find people who are currently seeking a job and use them
- as test subjects.
- We also need to create a subject set of more broad background.
- All of our subjects were in same ages and have some college education.
- More diverse set of subjects could reveal more insight about design of
- our website.
+Many job seekers use a large spreadsheet to track their job search, and
+ our goal is to replace that spreadsheet.
+ We could try to query test users about how they have used a job tracking
+ spreadsheet in the past, what adantages and disadvantages it provided compared
+ to our system.
+ We might also exploe how different people organize those spreadsheets,
+ to provide insight in how to better organize our site.
 \end_layout
 
 \begin_layout Section
