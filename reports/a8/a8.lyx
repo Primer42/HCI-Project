@@ -570,13 +570,59 @@ Add Entry
  what type of entry they are adding.
 \end_layout
 
+\begin_layout Section
+Future Work
+\end_layout
+
+\begin_layout Standard
+First, and most notably, we need to make the changes described in the previous
+ section.
+ This should make the system's function both clearer, and adapt better to
+ user expecations and workflow.
+ These changes include making entry type specific 
+\begin_inset Quotes eld
+\end_inset
+
+Add Entry
+\begin_inset Quotes erd
+\end_inset
+
+ pages, adding the ability to edit entries once they are added, and making
+ the user's current page clearer.
+\end_layout
+
+\begin_layout Standard
+It may also be beneficial to compare our system to a different system with
+ a similar purpose.
+ 
+\end_layout
+
+\begin_layout Standard
+Highligting icon of current page at navigation bar could also be useful
+ for users.
+ Our website could be accesed from almost any place and device.
+ In future experiments, it would provide more insight to us if we could
+ perform several experiments with different enviroment settings.
+ Since this application is designed for job seekers for future experiments
+ we should try to find people who are currently seeking a job and use them
+ as test subjects.
+ We also need to create a subject set of more broad background.
+ All of our subjects were in same ages and have some college education.
+ More diverse set of subjects could reveal more insight about design of
+ our website.
+\end_layout
+
+\begin_layout Section
+Charts
+\end_layout
+
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
 overhang 0in
 width "100col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -617,7 +663,7 @@ The system was easy to use.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:system_easy"
+name "fig:system_easy-1"
 
 \end_inset
 
@@ -647,7 +693,7 @@ width "45col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -672,7 +718,7 @@ I liked the general look and feel of the system.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:look_and_feel"
+name "fig:look_and_feel-1"
 
 \end_inset
 
@@ -700,7 +746,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -741,7 +787,7 @@ I enjoyed using the system.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:enjoyed_using"
+name "fig:enjoyed_using-1"
 
 \end_inset
 
@@ -797,7 +843,7 @@ I clearly understood the intended purpose of the system, and how to achieve
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:understood_purpose"
+name "fig:understood_purpose-1"
 
 \end_inset
 
@@ -825,7 +871,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -867,7 +913,7 @@ I never experienced a time while using the system where I was unsure of
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:unsure_action"
+name "fig:unsure_action-1"
 
 \end_inset
 
@@ -922,7 +968,7 @@ The information presented was organized in a clear way.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:information_clear"
+name "fig:information_clear-1"
 
 \end_inset
 
@@ -950,7 +996,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -991,7 +1037,7 @@ Learning to operate the system was easy
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:leaning_operate"
+name "fig:leaning_operate-1"
 
 \end_inset
 
@@ -1046,7 +1092,7 @@ Exploring new features by trial and error was easy.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:trail_and_error"
+name "fig:trail_and_error-1"
 
 \end_inset
 
@@ -1074,7 +1120,7 @@ lines 0
 placement o
 overhang 0in
 width "100col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -1115,7 +1161,7 @@ Performing tasks was always straightforward.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:straightforward"
+name "fig:straightforward-1"
 
 \end_inset
 
@@ -1170,7 +1216,7 @@ I easily adapted to using the system.
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:adapted_to_using"
+name "fig:adapted_to_using-1"
 
 \end_inset
 
@@ -1190,48 +1236,6 @@ name "fig:adapted_to_using"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Future Work
-\end_layout
-
-\begin_layout Standard
-First, and most notably, we need to make the changes described in the previous
- section.
- This should make the system's function both clearer, and adapt better to
- user expecations and workflow.
- These changes include making entry type specific 
-\begin_inset Quotes eld
-\end_inset
-
-Add Entry
-\begin_inset Quotes erd
-\end_inset
-
- pages, adding the ability to edit entries once they are added, and making
- the user's current page clearer.
-\end_layout
-
-\begin_layout Standard
-It may also be beneficial to compare our system to a different system with
- a similar purpose.
- 
-\end_layout
-
-\begin_layout Standard
-Highligting icon of current page at navigation bar could also be useful
- for users.
- Our website could be accesed from almost any place and device.
- In future experiments, it would provide more insight to us if we could
- perform several experiments with different enviroment settings.
- Since this application is designed for job seekers for future experiments
- we should try to find people who are currently seeking a job and use them
- as test subjects.
- We also need to create a subject set of more broad background.
- All of our subjects were in same ages and have some college education.
- More diverse set of subjects could reveal more insight about design of
- our website.
 \end_layout
 
 \end_body
