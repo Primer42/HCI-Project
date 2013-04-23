@@ -237,13 +237,14 @@ Storyboard
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename 1.png
-	scale 20
+	width 100col%
+	BoundingBox 0bp 0bp 2205bp 550bp
+	clip
 
 \end_inset
 
@@ -251,6 +252,14 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Setup of the Siftables
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -265,12 +274,22 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename 2.jpg
+	filename 2.png
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Adding elements to the flasks
+\end_layout
 
 \end_inset
 
@@ -283,18 +302,30 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename 3.png
-	scale 15
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Placing the hot or cold Siftable near the flask Siftable causes the flask's
+ temperature to raise or lower.
+ You can continue to add elements as above.
+\end_layout
 
 \end_inset
 
@@ -307,21 +338,36 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename 4.png
-	scale 15
+	width 100col%
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As the reaction takes place, it is shown on the screen, as well as other
+ feedback, such as sounds and vibrations.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
