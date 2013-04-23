@@ -72,7 +72,7 @@ The Paper
 \end_layout
 
 \begin_layout Standard
-The paper we cover in this has a title of 
+We are presenting a paper titled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -80,16 +80,15 @@ Siftables: Towards Sensor Network User Interfaces
 \begin_inset Quotes erd
 \end_inset
 
-.
- It is written by David Merill, Jeevan Kalanithi and Pattie Maes.
- They are all affiliated with MIT Media Laboratory.
- The paper could be found at 
+ by David Merill, Jeevan Kalanithi and Pattie Maes.
+ They are all affiliated with the MIT Media Laboratory, and their paper
+ can be found at 
 \begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
 
-http://alumni.media.mit.edu/~dmerrill/publications/dmerrill_siftables.pdf
+http://alumni.media.mit.edu/~dmerrill/publications/dmerrill_Siftables.pdf
 \end_layout
 
 \end_inset
@@ -102,13 +101,15 @@ Summary of the Paper
 \end_layout
 
 \begin_layout Standard
-Siftables is a novel tangible user interface platform which is made possible
- with application of sensor networks.
- Siftables could be defined as smart blocks or legos with screens informally.
- Siftables consists in a collection of compact tiles (36mm x 36mm x 10mm)
- - each with a color LCD screen, a 3-axis accelerometer, four IrDA infrared
- transceivers, an onboard rechargeable battery and an RF radio.
- Siftables are able to sense their own motion and impacts with other objects.
+Siftables is a novel tangible user interface platform, made possible by
+ the miniaturization and availability of sensor networks.
+ Siftables can be informally described as smart blocks or legos with screens.
+ Each Siftables is a compact tile (36mm x 36mm x 10mm) with a color LCD
+ screen, a 3-axis accelerometer, four IrDA infrared transceivers, an on-board
+ rechargeable battery and an RF radio.
+ Siftables work best in groups, as they are able interact with each other
+ and the environment - they can be programed in multiple ways, to change
+ their display depending on the presence and orientation of other Siftables.
 \end_layout
 
 \begin_layout Standard
@@ -116,14 +117,15 @@ Siftables provide an interface that better fit the way our brains naturally
  interact with the world.
  For instance, the Siftables can be programmed to show thumbnails of photographs
 , and a user can simply push them into piles to easily and intuitively sort
- them.
+ them into groups.
  It’s the exact same action as the user would take with printed photographs,
- with all of the convenience of digital photos.
+ with all of the conveniences of digital photos.
  Another example is a game similar to Scrabble or Boggle.
  Each Siftable displays a letter, and the user lines up the tiles to form
- words - each word created is rewarded automatically with points.
- This game is incredibly intuitive, while also automatically scoring and,
- since the letters can change, providing endless combinations and challenges.
+ words - each word created is automatically recognized and rewarded with
+ points.
+ This game is incredibly intuitive, and, since the letters can change, provides
+ endless combinations and challenges.
 \end_layout
 
 \begin_layout Standard
@@ -131,11 +133,15 @@ The team that developed Siftables is also working on an interaction language
  for them, and other small, tactile user interfaces like them.
  This would provide a library of manipulations and metaphors analogous to
  point-and-click or drag-and-drop for the GUI, but particularly related
- to the multiple, small, distributed, manipulatable tangible interface devices.
+ to the multiple, small, distributed, manipulable tangible interface devices.
+ This would allow developers to easily create programs for these sorts of
+ interfaces, without having to worry about the gesture recognition stage,
+ just as modern programers do not worry about the mouse position when a
+ button or menu is selected.
 \end_layout
 
 \begin_layout Standard
-Siftables could be improved by adding outputs other than its screen.
+Siftables could be improved by adding alternative outputs.
  For example, they could have:
 \end_layout
 
@@ -156,11 +162,12 @@ a small motor attached to an unbalanced weight, allowing them to vibrate
 \end_layout
 
 \begin_layout Standard
-Adding these extra components shouldn’t be too problematic.
+Adding these extra components should’t be too problematic.
  All of the parts exist, and almost all are already used in common consumer
  electronics.
  The difficulty comes with making these parts small and energy efficient
- enough as to not drastically increase the size of the Siftables.
+ enough as to not drastically increase the size or decrease the battery
+ life of the Siftables.
 \end_layout
 
 \begin_layout Standard
@@ -187,32 +194,32 @@ Our Design - Chemistry Laboratory @ Home
 
 \begin_layout Standard
 Siftables could be programmed to teach chemical reactions.
- In our application siftables will behave accordingly.
+ In our application Siftables will behave accordingly.
 \end_layout
 
 \begin_layout Enumerate
-1 siftable will behave like a flask
+One Siftable will behave like a flask
 \end_layout
 
 \begin_layout Enumerate
-1 siftable will decrease the temperature, which will be cool to the touch
+One Siftable will decrease the temperature, which will be cool to the touch
 \end_layout
 
 \begin_layout Enumerate
-1 siftable will increase the temperature, which will be warm to the touch
+One Siftable will increase the temperature, which will be warm to the touch
 \end_layout
 
 \begin_layout Enumerate
-Other siftables will allow the user to add or remove various elements.
+Other Siftables will allow the user to add or remove various elements.
 \end_layout
 
 \begin_layout Standard
-The user will be able to add elements to the flask by moving a siftable
+The user will be able to add elements to the flask by moving a Siftable
  near the flask and tilting it off the table, just like pouring liquid in
  real life.
  Once the user has added elements to the flask, they can either heat it
- or cool it by putting it above the heating or cooling siftables - just
- as if they put the flask on top of a bunsen burner or into a refrigerator.
+ or cool it by putting it near the heating or cooling Siftables - just as
+ if they put the flask on top of a Bunsen burner or into a refrigerator.
  They can continue to add elements as the flask changes temperature, and
  observe the reaction happening in the flask, just like in real life.
  The flask Siftable will be able to make noise, vibrate, or change temperature
@@ -221,7 +228,7 @@ The user will be able to add elements to the flask by moving a siftable
 \end_layout
 
 \begin_layout Section
-StoryBoard
+Storyboard
 \end_layout
 
 \begin_layout Standard
